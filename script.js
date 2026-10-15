@@ -55,9 +55,16 @@ if (!prefersReducedMotion && "IntersectionObserver" in window && revealItems.len
 }
 
 const motionDiagrams = document.querySelectorAll(".motion-diagram");
+const sceneSvgs = document.querySelectorAll(".motion-diagram .scene-svg");
+sceneSvgs.forEach((scene) => scene.pauseAnimations?.());
+
 if (!prefersReducedMotion && "IntersectionObserver" in window && motionDiagrams.length) {
   const diagramObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => entry.target.classList.toggle("is-active", entry.isIntersecting));
-  }, { threshold: 0.35 });
+    entries.forEach((entry) => {
+      const visual = entry.target;
+      visual.classList.toggle("is-active", entry.isIntersecting);
+      visual.querySelector(".scene-svg")?.[entry.isIntersecting ? "unpauseAnimations" : "pauseAnimations"]?.();
+    });
+  }, { threshold: 0.25 });
   motionDiagrams.forEach((diagram) => diagramObserver.observe(diagram));
 }

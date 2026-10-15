@@ -79,8 +79,59 @@
             <p class="project-summary">Turning scanned financial agreements into structured information with a document intelligence pipeline designed for sensitive data.</p>
             <div class="project-tags"><span>OCR</span><span>LLM agents</span><span>FastAPI</span><span>React</span><span>Docker</span></div>
           </div>
-          <div class="doc-visual motion-diagram">
-            <iframe src="docai-scene-build/index.html?embed" title="Interactive 3D DocAI extraction scene" loading="lazy" allow="fullscreen"></iframe>
+          <div class="doc-visual motion-diagram" role="img" aria-label="Floating financial agreement pages with OCR fields moving into structured data cards and a five-node agent network">
+            <svg class="scene-svg docai-scene" viewBox="0 0 640 410" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+              <defs>
+                <linearGradient id="doc-floor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#71785d"/><stop offset="1" stop-color="#4b523e"/></linearGradient>
+                <linearGradient id="paper-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf5"/><stop offset="1" stop-color="#e9e1d1"/></linearGradient>
+                <filter id="paper-shadow" x="-30%" y="-30%" width="170%" height="180%"><feGaussianBlur in="SourceAlpha" stdDeviation="8"/><feOffset dy="9"/><feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <rect width="640" height="410" fill="#555d46"/>
+              <path d="M0 282 390 158 640 245 243 410Z" fill="url(#doc-floor)"/>
+              <path d="m0 282 390-124M243 410l397-165" fill="none" stroke="#e1d7bf" stroke-opacity=".12"/>
+              <ellipse cx="188" cy="341" rx="156" ry="32" fill="#292d24" opacity=".25"/>
+              <g class="doc-page page-back" transform="translate(52 69) rotate(-10 142 142)" filter="url(#paper-shadow)">
+                <path d="M10 8h229l24 24v276H10Z" fill="#d5cbb8" stroke="#b8a989"/>
+                <path d="M239 8v25h24" fill="#eee6d7" stroke="#b8a989"/>
+                <path d="M32 57h154M32 71h112M32 90h177" stroke="#aaa18f" stroke-width="3" opacity=".56"/>
+                <path d="M32 125h190M32 137h165M32 149h174M32 161h136M32 188h188M32 200h165M32 212h174M32 224h136" stroke="#b9b09f" stroke-width="2" opacity=".55"/>
+              </g>
+              <g class="doc-page page-front" transform="translate(74 48) rotate(-4 136 150)" filter="url(#paper-shadow)">
+                <path d="M10 8h222l24 24v300H10Z" fill="url(#paper-face)" stroke="#c5b99f"/>
+                <path d="M232 8v25h24" fill="#e8dfcf" stroke="#c5b99f"/>
+                <text x="29" y="49" fill="#596148" font-size="10" font-family="Arial,sans-serif" letter-spacing="1.5">FINANCIAL AGREEMENT</text>
+                <path d="M29 61h178" stroke="#b9ad94" stroke-width="1"/>
+                <path d="M29 80h154M29 91h113M29 116h177M29 128h163M29 140h174M29 170h183M29 182h142M29 194h176M29 206h155M29 234h174M29 246h151M29 258h181" stroke="#c7bead" stroke-width="2" stroke-linecap="round"/>
+                <rect class="ocr-box ocr-one" x="26" y="101" width="181" height="21" rx="2"/>
+                <rect class="ocr-box ocr-two" x="26" y="161" width="145" height="22" rx="2"/>
+                <rect class="ocr-box ocr-three" x="26" y="225" width="175" height="22" rx="2"/>
+                <path d="M29 282h93" stroke="#b4a688" stroke-width="2"/>
+                <path d="M145 280q17-15 29 0t29-2" fill="none" stroke="#9d927e" stroke-width="1.5"/>
+              </g>
+              <g class="extraction-links" fill="none" stroke="#d9c79f" stroke-width="1.2">
+                <path d="M281 153C309 142 320 105 349 102"/><path d="M270 201C309 195 320 154 349 156"/><path d="M278 245C311 239 320 207 349 210"/><path d="M276 293C313 285 322 260 349 264"/><path d="M470 102h26M470 156h26M470 210h26M470 264h26"/>
+              </g>
+              <g class="field-card field-card-a" transform="translate(350 83)">
+                <rect width="120" height="39" rx="3" fill="#f4efe3" stroke="#b8ad93"/><text x="10" y="14" fill="#667052" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">PARTIES</text><path d="M10 24h72M10 30h49" stroke="#b4aa98" stroke-width="2" stroke-linecap="round"/>
+              </g>
+              <g class="field-card field-card-b" transform="translate(350 137)">
+                <rect width="120" height="39" rx="3" fill="#f4efe3" stroke="#b8ad93"/><text x="10" y="14" fill="#667052" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">DATE</text><path d="M10 24h63M10 30h85" stroke="#b4aa98" stroke-width="2" stroke-linecap="round"/>
+              </g>
+              <g class="field-card field-card-c" transform="translate(350 191)">
+                <rect width="120" height="39" rx="3" fill="#f4efe3" stroke="#b8ad93"/><text x="10" y="14" fill="#667052" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">INTEREST RATE</text><path d="M10 24h90M10 30h62" stroke="#b4aa98" stroke-width="2" stroke-linecap="round"/>
+              </g>
+              <g class="field-card field-card-d" transform="translate(350 245)">
+                <rect width="120" height="39" rx="3" fill="#f4efe3" stroke="#b8ad93"/><text x="10" y="14" fill="#667052" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">FINANCIAL TERMS</text><path d="M10 24h74M10 30h54" stroke="#b4aa98" stroke-width="2" stroke-linecap="round"/>
+              </g>
+              <g class="agent-network" fill="none" stroke="#cfc19e" stroke-width="1">
+                <path d="M520 135 565 103 605 143 581 199 529 205 520 135M565 103 581 199M605 143 529 205"/>
+              </g>
+              <g class="agent-nodes" fill="#d9c79f" stroke="#4d543e" stroke-width="2">
+                <circle cx="520" cy="135" r="7"/><circle cx="565" cy="103" r="7"/><circle cx="605" cy="143" r="7"/><circle cx="581" cy="199" r="7"/><circle cx="529" cy="205" r="7"/>
+              </g>
+              <text x="517" y="238" fill="#eee6d5" font-size="8" font-family="Arial,sans-serif" letter-spacing="1.2">5 AGENTS</text>
+              <text x="350" y="304" fill="#eee6d5" font-size="8" font-family="Arial,sans-serif" letter-spacing="1.2">EXTRACTED FIELDS</text>
+            </svg>
           </div>
           <div class="project-details">
             <div><span class="detail-label">Approach</span><p>Benchmarked five OCR approaches, selected GLM-OCR, and built a five-agent LLM architecture for dynamic field extraction. Local Ollama inference supported data residency needs.</p></div>
@@ -91,8 +142,35 @@
 
         <div class="project-grid">
           <article class="project project-card reveal" aria-labelledby="uav-title">
-            <div class="uav-visual motion-diagram" role="img" aria-label="Illustrative aerial inspection grid with a highlighted infrastructure anomaly">
-              <div class="visual-label">FIELD STUDY / 02</div><div class="inspection-grid"></div><div class="pipeline-line"></div><div class="scan-ring"><i></i></div><span class="target-label">DETECTED</span><span class="visual-coord">36°48′N<br>10°10′E</span>
+            <div class="uav-visual motion-diagram" role="img" aria-label="Isometric miniature pipeline inspection scene with a drone scanning a tracked defect">
+              <svg class="scene-svg pipeline-scene" viewBox="0 0 680 280" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                <defs>
+                  <linearGradient id="pipe-metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c7baa0"/><stop offset=".48" stop-color="#8c8c75"/><stop offset="1" stop-color="#596149"/></linearGradient>
+                  <pattern id="inspection-grid" width="28" height="28" patternTransform="skewY(-14)" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#eee5d2" stroke-opacity=".11" stroke-width="1"/></pattern>
+                  <filter id="drone-shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceAlpha" stdDeviation="4"/><feOffset dy="4"/><feComponentTransfer><feFuncA type="linear" slope=".32"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                </defs>
+                <rect width="680" height="280" fill="#525a44"/><path d="M0 181 680 106v174H0Z" fill="#60684f"/><rect y="100" width="680" height="180" fill="url(#inspection-grid)"/>
+                <path d="M70 222 607 155" stroke="#32382d" stroke-width="43" stroke-linecap="round" opacity=".28"/>
+                <path d="M62 202 606 135" stroke="#404638" stroke-width="34" stroke-linecap="round"/>
+                <path d="M62 195 606 128" stroke="url(#pipe-metal)" stroke-width="29" stroke-linecap="round"/>
+                <path d="M68 188 606 122" stroke="#e4d9c2" stroke-opacity=".58" stroke-width="3" stroke-linecap="round"/>
+                <path d="M185 180v53m12-55v52m162-73v53m12-55v52m157-72v52m12-55v52" stroke="#cbc0a6" stroke-width="5" opacity=".65"/>
+                <path d="m426 146 6-10 5 7 6-11 4 6 6-8" fill="none" stroke="#343a2e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M444 153q-2 7-4 12m14-15q-1 8-3 13" fill="none" stroke="#c5aa72" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+                <g class="defect-marker">
+                  <path d="M409 103h-12v12m45-12h12v12m-45 51h-12v-12m45 12h12v-12" fill="none" stroke="#d9c79f" stroke-width="1.4"/>
+                  <path d="M450 111h69" stroke="#d9c79f" stroke-width="1"/><rect x="516" y="100" width="102" height="22" rx="2" fill="#454c3a" stroke="#b6a57f"/><text x="526" y="114" fill="#eee6d5" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">DETECTED · TRACKED</text>
+                  <circle cx="432" cy="132" r="4" fill="#d9c79f" stroke="#4a513e" stroke-width="2"/>
+                </g>
+                <g class="inspection-drone" transform="translate(238 63)" filter="url(#drone-shadow)">
+                  <path d="M-40-13-13-3m53-10L13-3M-39 14-13 4m52 10L13 4" stroke="#d8cfbb" stroke-width="4" stroke-linecap="round"/>
+                  <ellipse cx="-43" cy="-15" rx="15" ry="4" fill="none" stroke="#d8cfbb" stroke-width="1.5"/><ellipse cx="43" cy="-15" rx="15" ry="4" fill="none" stroke="#d8cfbb" stroke-width="1.5"/><ellipse cx="-43" cy="16" rx="15" ry="4" fill="none" stroke="#d8cfbb" stroke-width="1.5"/><ellipse cx="43" cy="16" rx="15" ry="4" fill="none" stroke="#d8cfbb" stroke-width="1.5"/>
+                  <path d="M-16-6Q0-17 16-6L20 1 13 8H-13L-20 1Z" fill="#d0c5ae" stroke="#4c533f" stroke-width="1.4"/><path d="M-5 8v8l5 4 5-4V8" fill="#8f917b"/><circle cy="2" r="4" fill="#687254" stroke="#efe5d1" stroke-width="1.3"/>
+                </g>
+                <path class="drone-scan" d="m238 84 178 61" stroke="#d9c79f" stroke-width="1" stroke-dasharray="4 5"/>
+                <g class="scan-frame"><animateMotion dur="17s" repeatCount="indefinite" path="M112 198C247 174 348 160 540 137"/><rect x="-25" y="-19" width="50" height="38" rx="2" fill="#d9c79f" fill-opacity=".04" stroke="#d9c79f" stroke-width="1.3"/><path d="M0-17v34M-23 0h46" stroke="#d9c79f" stroke-opacity=".6" stroke-width=".7"/></g>
+                <text x="26" y="36" fill="#eee6d5" font-size="9" font-family="Arial,sans-serif" letter-spacing="1.4">PIPELINE INSPECTION · OBJECT TRACKING</text>
+              </svg>
             </div>
             <div class="project-card-body">
               <p class="project-kicker"><span>02</span> FARNESS UAV SOFTWARE · 2025</p>
@@ -105,8 +183,43 @@
           </article>
 
           <article class="project project-card reveal" aria-labelledby="candidate-title">
-            <div class="candidate-visual motion-diagram" role="img" aria-label="Illustrative resume and job description matching workflow with grounded feedback">
-              <div class="visual-label">MATCHING WORKFLOW / 03</div><div class="match-doc match-resume"><span>RESUME</span><i></i><i></i><i></i><b>SKILLS</b></div><div class="match-doc match-role"><span>JOB BRIEF</span><i></i><i></i><i></i><b>ROLE</b></div><span class="match-connector" aria-hidden="true"></span><div class="match-result"><span>SEMANTIC<br>MATCH</span><b>↗</b></div><div class="match-caption">RETRIEVAL-GROUNDED FEEDBACK</div>
+            <div class="candidate-visual motion-diagram" role="group" tabindex="0" aria-label="Candidate screening workflow with abstract resume and role cards, connecting skill signals, a matching result, and grounded feedback">
+              <svg class="scene-svg candidate-scene" viewBox="0 0 680 280" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                <defs>
+                  <linearGradient id="candidate-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf6"/><stop offset="1" stop-color="#e8dfcf"/></linearGradient>
+                  <filter id="card-shadow" x="-30%" y="-30%" width="170%" height="180%"><feGaussianBlur in="SourceAlpha" stdDeviation="4"/><feOffset dy="5"/><feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                </defs>
+                <rect width="680" height="280" fill="#414638"/><path d="M0 216 680 176v104H0Z" fill="#4d5441"/><path d="M40 235 642 198" stroke="#cdbd98" stroke-opacity=".24"/>
+                <g class="candidate-links" fill="none" stroke="#d9c79f" stroke-width="1.2" stroke-dasharray="3 5">
+                  <path d="M213 113C277 81 310 85 369 113"/><path d="M213 148C280 176 312 165 369 147"/><path d="M477 111C509 111 523 113 541 124"/><path d="M477 149C510 149 525 143 541 133"/>
+                </g>
+                <g class="resume-card" filter="url(#card-shadow)" transform="translate(54 51) rotate(-4 80 88)">
+                  <path d="M4 4h151l18 18v168H4Z" fill="url(#candidate-paper)" stroke="#c7b893"/><path d="M155 4v19h18" fill="#e7decd" stroke="#c7b893"/>
+                  <circle cx="28" cy="39" r="11" fill="#d7cfbd"/><path d="M48 33h82M48 41h62" stroke="#9b9888" stroke-width="2" stroke-linecap="round"/>
+                  <text x="18" y="72" fill="#596148" font-size="8" font-family="Arial,sans-serif" letter-spacing="1.2">SKILL SIGNALS</text>
+                  <rect x="18" y="81" width="116" height="23" rx="2" fill="#eee8db" stroke="#cbc2af"/><path d="M27 92h55" stroke="#8a9274" stroke-width="3" stroke-linecap="round"/><circle class="skill-point skill-point-a" cx="118" cy="92" r="4" fill="#bda872"/>
+                  <rect x="18" y="112" width="116" height="23" rx="2" fill="#eee8db" stroke="#cbc2af"/><path d="M27 123h69" stroke="#8a9274" stroke-width="3" stroke-linecap="round"/><circle class="skill-point skill-point-b" cx="109" cy="123" r="4" fill="#bda872"/>
+                  <path d="M18 151h117M18 161h93" stroke="#b9b09f" stroke-width="2" stroke-linecap="round"/>
+                  <text x="18" y="188" fill="#727662" font-size="7" font-family="Arial,sans-serif" letter-spacing="1">RESUME</text>
+                </g>
+                <g class="role-card" filter="url(#card-shadow)" transform="translate(279 58) rotate(3 80 88)">
+                  <path d="M4 4h151l18 18v168H4Z" fill="url(#candidate-paper)" stroke="#c7b893"/><path d="M155 4v19h18" fill="#e7decd" stroke="#c7b893"/>
+                  <path d="M19 32h101M19 41h70" stroke="#777e65" stroke-width="3" stroke-linecap="round"/>
+                  <text x="18" y="70" fill="#596148" font-size="8" font-family="Arial,sans-serif" letter-spacing="1.2">ROLE CRITERIA</text>
+                  <rect x="18" y="80" width="116" height="23" rx="2" fill="#eee8db" stroke="#cbc2af"/><path d="M27 91h60" stroke="#8a9274" stroke-width="3" stroke-linecap="round"/><circle class="skill-point role-point-a" cx="37" cy="91" r="4" fill="#bda872"/>
+                  <rect x="18" y="111" width="116" height="23" rx="2" fill="#eee8db" stroke="#cbc2af"/><path d="M27 122h74" stroke="#8a9274" stroke-width="3" stroke-linecap="round"/><circle class="skill-point role-point-b" cx="50" cy="122" r="4" fill="#bda872"/>
+                  <path d="M18 151h117M18 161h93" stroke="#b9b09f" stroke-width="2" stroke-linecap="round"/>
+                  <text x="18" y="188" fill="#727662" font-size="7" font-family="Arial,sans-serif" letter-spacing="1">JOB BRIEF</text>
+                </g>
+                <g class="match-result-card" filter="url(#card-shadow)" transform="translate(520 93)">
+                  <path d="M0 0h116v81H0Z" fill="#737b5d" stroke="#d0c19e"/><text x="13" y="22" fill="#f1eadb" font-size="8" font-family="Arial,sans-serif" letter-spacing="1.2">MATCH</text><path d="M13 31h88" stroke="#d8c89f" stroke-opacity=".65"/><text x="13" y="49" fill="#fffaf0" font-size="11" font-family="Georgia,serif">Contextual</text><text x="13" y="63" fill="#fffaf0" font-size="11" font-family="Georgia,serif">alignment</text>
+                </g>
+                <g class="feedback-card" transform="translate(492 198)">
+                  <rect width="142" height="42" rx="2" fill="#e7dfd0" stroke="#c5b68f"/><path d="M11 13h74M11 21h115M11 29h92" stroke="#9c998b" stroke-width="2" stroke-linecap="round"/><text x="94" y="14" fill="#626a50" font-size="6" font-family="Arial,sans-serif" letter-spacing=".8">GROUNDED FEEDBACK</text>
+                </g>
+                <text x="45" y="31" fill="#e9e0cd" font-size="9" font-family="Arial,sans-serif" letter-spacing="1.4">SKILL SIGNALS → CONTEXTUAL MATCH</text>
+              </svg>
+              <div class="match-detail">Feedback grounded in role context</div>
             </div>
             <div class="project-card-body">
               <p class="project-kicker"><span>03</span> PERSONAL PROJECT</p>
@@ -118,8 +231,39 @@
           </article>
 
           <article class="project project-card project-wide reveal" aria-labelledby="farmwise-title">
-            <div class="farm-visual motion-diagram" role="img" aria-label="Illustrative crop rotation diagram connecting soil and crop sequence data with a recommendation model">
-              <div class="visual-label">AGRICULTURE / 04</div><div class="field-row"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="soil-nodes"><span>SOIL</span><i></i><i></i><i></i><i></i><span>SEASONS</span></div><div class="model-chip">GCN <b>×</b> LSTM</div><div class="crop-output"><span>ROTATION</span><b>↗</b></div>
+            <div class="farm-visual motion-diagram" role="img" aria-label="Isometric miniature farm with four crop plots, layered soil, crop rows, and a highlighted recommended plot">
+              <svg class="scene-svg farm-scene" viewBox="0 0 680 320" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                <defs>
+                  <linearGradient id="farm-ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#85896a"/><stop offset="1" stop-color="#62694f"/></linearGradient>
+                  <linearGradient id="soil-side" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#aa9470"/><stop offset="1" stop-color="#756349"/></linearGradient>
+                  <filter id="farm-shadow" x="-20%" y="-25%" width="150%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="6"/><feOffset dy="8"/><feComponentTransfer><feFuncA type="linear" slope=".28"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                </defs>
+                <rect width="680" height="320" fill="#555d47"/><path d="M0 243 680 207v113H0Z" fill="#60684f"/>
+                <ellipse cx="325" cy="259" rx="244" ry="39" fill="#282d23" opacity=".25"/>
+                <g class="farm-maquette" filter="url(#farm-shadow)">
+                  <path d="m85 151 260-91 262 89-263 98Z" fill="url(#farm-ground)" stroke="#cabea0" stroke-width="1.2"/>
+                  <path d="m85 151 259 96v18L85 171Z" fill="#8b7759"/><path d="m344 247 263-98v18L344 265Z" fill="url(#soil-side)"/>
+                  <path d="m104 150 241-79 92 32-242 82Z" fill="#737b5e" stroke="#c9bd9f" stroke-opacity=".6"/>
+                  <path d="m196 185 243-82 93 32-244 83Z" fill="#747b5d" stroke="#c9bd9f" stroke-opacity=".6"/>
+                  <path d="m105 150 92 35v62l-92-34Z" fill="#727a5b" stroke="#c9bd9f" stroke-opacity=".6"/>
+                  <path d="m197 185 91 34v62l-91-34Z" fill="#727a5b" stroke="#c9bd9f" stroke-opacity=".6"/>
+                  <path d="m439 103 93 32v62l-93-32Z" fill="#7a805f" stroke="#d7c69c" stroke-width="1.8"/>
+                  <path d="m288 219 244-84v62l-244 84Z" fill="#737b5a" stroke="#c9bd9f" stroke-opacity=".6"/>
+                  <g class="crop-row crop-row-one" stroke="#d0c49f" stroke-opacity=".72" stroke-width="1.3"><path d="m119 145 77 29m-62-35 77 29m-62-35 77 29m-62-35 77 29"/></g>
+                  <g class="crop-row crop-row-two" stroke="#c4bd9c" stroke-opacity=".72" stroke-width="1.3"><path d="m216 180 76 29m-61-35 76 29m-61-35 76 29m-61-35 76 29"/></g>
+                  <g class="crop-row crop-row-three" stroke="#d6c89e" stroke-width="1.5"><path d="m454 102 77 27m-62-33 77 27m-62-33 77 27m-62-33 77 27"/></g>
+                  <g class="crop-row crop-row-four" stroke="#c6bf9d" stroke-opacity=".7" stroke-width="1.3"><path d="m306 214 77 27m-62-33 77 27m-62-33 77 27m-62-33 77 27"/></g>
+                  <g class="field-plants" fill="#a8ad83" stroke="#e2d4ad" stroke-width="1">
+                    <path d="M148 139v-15m0 7-6-5m6 9 6-6M172 148v-15m0 7-6-5m6 9 6-6M246 175v-15m0 7-6-5m6 9 6-6M271 184v-15m0 7-6-5m6 9 6-6M484 93V78m0 7-6-5m6 9 6-6M510 102V87m0 7-6-5m6 9 6-6M340 208v-15m0 7-6-5m6 9 6-6M367 198v-15m0 7-6-5m6 9 6-6"/>
+                  </g>
+                  <path class="recommended-outline" d="m439 103 93 32v62l-93-32Z" fill="none" stroke="#ead8ad" stroke-width="2.2" stroke-dasharray="5 4"/>
+                  <g class="recommended-label" transform="translate(471 62)"><rect width="119" height="23" rx="2" fill="#434a38" stroke="#c7b486"/><text x="10" y="15" fill="#f0e7d5" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">RECOMMENDED PLOT</text><path d="m17 23-6 15" stroke="#d9c79f"/></g>
+                  <g class="farm-network" fill="none" stroke="#dfd0ae" stroke-width="1" stroke-dasharray="3 4"><path d="M144 224 246 255 343 218 476 194"/><path d="M246 255 275 158 476 194"/><path d="M343 218 485 135"/></g>
+                  <g fill="#e1cf9f" stroke="#535a44" stroke-width="2"><circle cx="144" cy="224" r="4"/><circle cx="246" cy="255" r="4"/><circle cx="343" cy="218" r="4"/><circle cx="476" cy="194" r="4"/></g>
+                </g>
+                <text x="27" y="34" fill="#eee6d5" font-size="9" font-family="Arial,sans-serif" letter-spacing="1.4">CROP ROTATION · SOIL + SEQUENCE</text>
+                <g class="farm-model-note" transform="translate(548 230)"><rect width="93" height="43" rx="2" fill="#414839" stroke="#c5b68f"/><text x="10" y="17" fill="#eee6d5" font-size="7" font-family="Arial,sans-serif" letter-spacing="1">GCN · LSTM</text><path d="M10 25h70M10 32h48" stroke="#a8ad83" stroke-width="1.5"/></g>
+              </svg>
             </div>
             <div class="project-card-body">
               <p class="project-kicker"><span>04</span> PERSONAL PROJECT</p>
