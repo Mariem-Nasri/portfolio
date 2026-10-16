@@ -92,10 +92,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--olive-dark); ou
 .project-summary { max-width: 400px; margin: 0; color: #55564d; font-size: 14px; line-height: 1.75; }
 .project-tags { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 7px; }
 .project-tags span, .experience-tags span { padding: 7px 10px; border: 1px solid #b5a0787a; color: var(--olive-dark); font-size: 9px; font-weight: 600; letter-spacing: .05em; }
-.doc-visual { min-height: 360px; position: relative; overflow: hidden; background: #555d46; color: var(--paper); }
+.doc-visual { min-height: 360px; position: relative; overflow: hidden; background: #505452; color: var(--paper); }
 .motion-diagram { isolation: isolate; }
-.motion-diagram:not(.is-active) :is(.doc-page, .ocr-box, .agent-nodes circle, .defect-marker, .resume-card, .role-card, .candidate-links path, .skill-point, .crop-row, .recommended-outline, .farm-network) { animation-play-state: paused; }
-.motion-diagram.is-active :is(.doc-page, .ocr-box, .agent-nodes circle, .defect-marker, .resume-card, .role-card, .candidate-links path, .skill-point, .crop-row, .recommended-outline, .farm-network) { animation-play-state: running; }
+.motion-diagram:not(.is-active) :is(.doc-page, .ocr-box, .data-packet, .agent-nodes circle, .defect-marker, .inspection-drone, .rotor-blur, .resume-card, .role-card, .candidate-links path, .matching-links path, .skill-point, .match-node, .match-result-card, .feedback-card, .crop-row, .plot-low-crop, .plot-tall-crop, .plot-cover-crop, .farm-nodes circle, .recommended-outline, .farm-network) { animation-play-state: paused; }
+.motion-diagram.is-active :is(.doc-page, .ocr-box, .data-packet, .agent-nodes circle, .defect-marker, .inspection-drone, .rotor-blur, .resume-card, .role-card, .candidate-links path, .matching-links path, .skill-point, .match-node, .match-result-card, .feedback-card, .crop-row, .plot-low-crop, .plot-tall-crop, .plot-cover-crop, .farm-nodes circle, .recommended-outline, .farm-network) { animation-play-state: running; }
 .scene-svg { display: block; width: 100%; height: 100%; }
 .doc-visual .scene-svg { position: absolute; inset: 0; }
 .doc-page { transform-box: fill-box; transform-origin: center; }
@@ -115,9 +115,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--olive-dark); ou
 .detail-divider { padding-inline: 6px; color: var(--gold); }
 .project-grid { margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .project-card { display: grid; grid-template-columns: 1fr; background: #eee8dc; }
-.uav-visual, .candidate-visual, .farm-visual { position: relative; overflow: hidden; color: #f5f0e7; background: #525a44; aspect-ratio: 680 / 280; }
+.uav-visual, .candidate-visual, .farm-visual { position: relative; min-width: 0; overflow: hidden; color: #f5f0e7; background: #525a44; aspect-ratio: 680 / 280; }
 .uav-visual .scene-svg, .candidate-visual .scene-svg, .farm-visual .scene-svg { position: absolute; inset: 0; }
-.farm-visual { aspect-ratio: 680 / 320; background: #555d47; }
+.uav-visual { aspect-ratio: 680 / 360; }
+.farm-visual { width: 100%; aspect-ratio: 680 / 320; background: #676a61; }
 .project-card-body { padding: 25px 27px 28px; }
 .project-card h3 { margin: 19px 0 11px; font: 400 clamp(30px, 3.3vw, 44px)/.92 var(--serif); letter-spacing: -.045em; text-transform: uppercase; }
 .project-card-body > p:not(.project-kicker) { max-width: 480px; margin: 0; color: #55564d; font-size: 13px; line-height: 1.7; }
@@ -130,21 +131,35 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--olive-dark); ou
 .metric-row + .project-tags { margin-top: 16px; }
 .scan-frame { transform-box: view-box; filter: drop-shadow(0 2px 2px rgb(30 32 26 / 20%)); }
 .defect-marker { transform-box: fill-box; transform-origin: center; animation: marker-pulse 3.2s ease-in-out infinite; }
+.inspection-drone { animation: drone-hover 6s ease-in-out infinite; }
+.rotor-blur { transform-box: fill-box; transform-origin: center; animation: rotor-motion .55s linear infinite alternate; }
 .resume-card, .role-card { transform-box: fill-box; transform-origin: center; animation: card-drift 8s ease-in-out infinite; transition: filter .35s ease; }
 .role-card { animation-delay: -4s; }
 .candidate-visual:hover .resume-card, .candidate-visual:focus-visible .resume-card, .candidate-visual:hover .role-card, .candidate-visual:focus-visible .role-card { filter: drop-shadow(0 8px 5px rgb(22 25 18 / 24%)); }
 .candidate-links path { stroke-dasharray: 3 5; animation: link-flow 12s linear infinite; }
+.matching-links path { stroke-dasharray: 3 5; animation: link-flow 9s linear infinite; }
 .skill-point { animation: node-pulse 3s ease-in-out infinite; }
+.match-node { transform-box: fill-box; transform-origin: center; animation: match-pulse 5s ease-in-out infinite; }
+.match-result-card { transform-box: fill-box; transform-origin: center; }
+.is-active .match-result-card { animation: field-arrive .7s .3s both; }
 .feedback-card { opacity: .88; transition: opacity .35s ease, transform .35s ease; transform-box: fill-box; transform-origin: center; }
+.is-active .feedback-card { animation: field-arrive .7s .65s both; }
 .candidate-visual:hover .feedback-card, .candidate-visual:focus-visible .feedback-card { opacity: 1; transform: translateY(-4px); }
 .match-detail { position: absolute; right: 14px; bottom: 12px; z-index: 4; padding: 7px 10px; border: 1px solid rgb(217 199 159 / 70%); background: rgb(52 57 42 / 94%); color: #f1eadb; font-size: 9px; letter-spacing: .04em; opacity: 0; transform: translateY(4px); transition: opacity .3s ease, transform .3s ease; }
 .candidate-visual:hover .match-detail, .candidate-visual:focus-visible .match-detail { opacity: 1; transform: translateY(0); }
-.project-wide { grid-column: 1 / -1; grid-template-columns: .82fr 1.18fr; align-items: stretch; }
+.project-wide { grid-column: 1 / -1; min-width: 0; grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); align-items: stretch; }
+.plot-low-crop, .plot-tall-crop, .plot-cover-crop { transform-box: fill-box; transform-origin: center; }
 .is-active .crop-row { animation: crop-grow 2s ease-out both; }
-.is-active .crop-row-two { animation-delay: .25s; }.is-active .crop-row-three { animation-delay: .5s; }.is-active .crop-row-four { animation-delay: .75s; }
+.is-active .crop-row-two, .is-active .plot-tall-crop { animation-delay: .35s; }
+.is-active .crop-row-three, .is-active .plot-cover-crop { animation-delay: .7s; }
+.is-active .plot-low-crop { animation: crop-reveal .75s ease-out both; }
+.is-active .plot-tall-crop { animation: crop-reveal .75s .35s ease-out both; }
+.is-active .plot-cover-crop { animation: crop-reveal .75s .7s ease-out both; }
 .recommended-outline { animation: recommendation 4.5s ease-in-out infinite; }
 .farm-network { stroke-dasharray: 4 5; animation: link-flow 16s linear infinite; }
-.project-wide .project-card-body { align-self: center; padding: 35px clamp(26px, 5vw, 64px); }
+.farm-nodes circle { transform-box: fill-box; transform-origin: center; animation: node-pulse 5s ease-in-out infinite; }
+.farm-nodes circle:nth-child(2) { animation-delay: -1.7s; }.farm-nodes circle:nth-child(3) { animation-delay: -3.4s; }
+.project-wide .project-card-body { min-width: 0; align-self: center; padding: 35px clamp(26px, 5vw, 64px); }
 
 /* About and skills */
 .about { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -387,10 +402,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--olive-dark); ou
 @keyframes ocr-mark { 50% { stroke-dashoffset: 16; fill-opacity: .12; } }
 @keyframes field-arrive { from { opacity: 0; scale: .94; } to { opacity: .92; scale: 1; } }
 @keyframes node-pulse { 50% { scale: 1.22; opacity: .72; } }
+@keyframes match-pulse { 50% { scale: 1.08; opacity: .82; } }
 @keyframes marker-pulse { 50% { scale: 1.12; opacity: .78; } }
+@keyframes drone-hover { 50% { translate: 0 -2px; } }
+@keyframes rotor-motion { to { opacity: .2; } }
 @keyframes card-drift { 50% { translate: 0 -3px; } }
 @keyframes link-flow { to { stroke-dashoffset: -48; } }
 @keyframes crop-grow { from { opacity: .35; } to { opacity: 1; } }
+@keyframes crop-reveal { from { opacity: .3; translate: 0 3px; } to { opacity: 1; translate: 0 0; } }
 @keyframes recommendation { 50% { stroke-opacity: .55; } }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }

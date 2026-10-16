@@ -82,11 +82,11 @@
           <div class="doc-visual motion-diagram" role="img" aria-label="Floating financial agreement pages with OCR fields moving into structured data cards and a five-node agent network">
             <svg class="scene-svg docai-scene" viewBox="0 0 640 410" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
               <defs>
-                <linearGradient id="doc-floor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#71785d"/><stop offset="1" stop-color="#4b523e"/></linearGradient>
+                <linearGradient id="doc-floor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#777a79"/><stop offset="1" stop-color="#4b4d4c"/></linearGradient>
                 <linearGradient id="paper-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf5"/><stop offset="1" stop-color="#e9e1d1"/></linearGradient>
                 <filter id="paper-shadow" x="-30%" y="-30%" width="170%" height="180%"><feGaussianBlur in="SourceAlpha" stdDeviation="8"/><feOffset dy="9"/><feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
               </defs>
-              <rect width="640" height="410" fill="#555d46"/>
+              <rect width="640" height="410" fill="#505452"/>
               <path d="M0 282 390 158 640 245 243 410Z" fill="url(#doc-floor)"/>
               <path d="m0 282 390-124M243 410l397-165" fill="none" stroke="#e1d7bf" stroke-opacity=".12"/>
               <ellipse cx="188" cy="341" rx="156" ry="32" fill="#292d24" opacity=".25"/>
@@ -105,22 +105,25 @@
                 <rect class="ocr-box ocr-one" x="26" y="101" width="181" height="21" rx="2"/>
                 <rect class="ocr-box ocr-two" x="26" y="161" width="145" height="22" rx="2"/>
                 <rect class="ocr-box ocr-three" x="26" y="225" width="175" height="22" rx="2"/>
+                <rect class="ocr-sweep" x="27" y="76" width="181" height="1.5" fill="#a98749" opacity=".72"><animate attributeName="y" values="76;274;76" dur="8s" repeatCount="indefinite"/></rect>
                 <path d="M29 282h93" stroke="#b4a688" stroke-width="2"/>
                 <path d="M145 280q17-15 29 0t29-2" fill="none" stroke="#9d927e" stroke-width="1.5"/>
               </g>
               <g class="extraction-links" fill="none" stroke="#d9c79f" stroke-width="1.2">
                 <path d="M281 153C309 142 320 105 349 102"/><path d="M270 201C309 195 320 154 349 156"/><path d="M278 245C311 239 320 207 349 210"/><path d="M276 293C313 285 322 260 349 264"/><path d="M470 102h26M470 156h26M470 210h26M470 264h26"/>
               </g>
-              <g class="field-card field-card-a" transform="translate(350 83)">
+              <circle class="data-packet" r="2.5" fill="#e8d6aa"><animateMotion dur="5.8s" repeatCount="indefinite" path="M281 153C309 142 320 105 349 102"/></circle>
+              <circle class="data-packet" r="2.5" fill="#e8d6aa"><animateMotion begin="1.2s" dur="6.4s" repeatCount="indefinite" path="M270 201C309 195 320 154 349 156"/></circle>
+              <g class="field-card field-card-a" transform="translate(350 83)" filter="url(#paper-shadow)">
                 <rect width="120" height="39" rx="3" fill="#f4efe3" stroke="#b8ad93"/><text x="10" y="14" fill="#667052" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">PARTIES</text><path d="M10 24h72M10 30h49" stroke="#b4aa98" stroke-width="2" stroke-linecap="round"/>
               </g>
-              <g class="field-card field-card-b" transform="translate(350 137)">
+              <g class="field-card field-card-b" transform="translate(350 137)" filter="url(#paper-shadow)">
                 <rect width="120" height="39" rx="3" fill="#f4efe3" stroke="#b8ad93"/><text x="10" y="14" fill="#667052" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">DATE</text><path d="M10 24h63M10 30h85" stroke="#b4aa98" stroke-width="2" stroke-linecap="round"/>
               </g>
-              <g class="field-card field-card-c" transform="translate(350 191)">
+              <g class="field-card field-card-c" transform="translate(350 191)" filter="url(#paper-shadow)">
                 <rect width="120" height="39" rx="3" fill="#f4efe3" stroke="#b8ad93"/><text x="10" y="14" fill="#667052" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">INTEREST RATE</text><path d="M10 24h90M10 30h62" stroke="#b4aa98" stroke-width="2" stroke-linecap="round"/>
               </g>
-              <g class="field-card field-card-d" transform="translate(350 245)">
+              <g class="field-card field-card-d" transform="translate(350 245)" filter="url(#paper-shadow)">
                 <rect width="120" height="39" rx="3" fill="#f4efe3" stroke="#b8ad93"/><text x="10" y="14" fill="#667052" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">FINANCIAL TERMS</text><path d="M10 24h74M10 30h54" stroke="#b4aa98" stroke-width="2" stroke-linecap="round"/>
               </g>
               <g class="agent-network" fill="none" stroke="#cfc19e" stroke-width="1">
@@ -143,33 +146,67 @@
         <div class="project-grid">
           <article class="project project-card reveal" aria-labelledby="uav-title">
             <div class="uav-visual motion-diagram" role="img" aria-label="Isometric miniature pipeline inspection scene with a drone scanning a tracked defect">
-              <svg class="scene-svg pipeline-scene" viewBox="0 0 680 280" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+              <svg class="scene-svg pipeline-scene" viewBox="0 0 680 360" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
                 <defs>
-                  <linearGradient id="pipe-metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c7baa0"/><stop offset=".48" stop-color="#8c8c75"/><stop offset="1" stop-color="#596149"/></linearGradient>
-                  <pattern id="inspection-grid" width="28" height="28" patternTransform="skewY(-14)" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#eee5d2" stroke-opacity=".11" stroke-width="1"/></pattern>
-                  <filter id="drone-shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceAlpha" stdDeviation="4"/><feOffset dy="4"/><feComponentTransfer><feFuncA type="linear" slope=".32"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                  <linearGradient id="industrial-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#9daab2"/><stop offset=".58" stop-color="#697b7c"/><stop offset="1" stop-color="#4d5a4a"/></linearGradient>
+                  <linearGradient id="tank-face" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#ddd5c2"/><stop offset=".72" stop-color="#b7b5a6"/><stop offset="1" stop-color="#7f867e"/></linearGradient>
+                  <linearGradient id="pipe-metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d4d2c4"/><stop offset=".22" stop-color="#92988d"/><stop offset=".52" stop-color="#585f59"/><stop offset=".75" stop-color="#a6a696"/><stop offset="1" stop-color="#414943"/></linearGradient>
+                  <linearGradient id="drone-shell" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424944"/><stop offset="1" stop-color="#171d1b"/></linearGradient>
+                  <filter id="drone-shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceAlpha" stdDeviation="4"/><feOffset dy="5"/><feComponentTransfer><feFuncA type="linear" slope=".42"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                  <filter id="soft-haze" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="8"/></filter>
                 </defs>
-                <rect width="680" height="280" fill="#525a44"/><path d="M0 181 680 106v174H0Z" fill="#60684f"/><rect y="100" width="680" height="180" fill="url(#inspection-grid)"/>
-                <path d="M70 222 607 155" stroke="#32382d" stroke-width="43" stroke-linecap="round" opacity=".28"/>
-                <path d="M62 202 606 135" stroke="#404638" stroke-width="34" stroke-linecap="round"/>
-                <path d="M62 195 606 128" stroke="url(#pipe-metal)" stroke-width="29" stroke-linecap="round"/>
-                <path d="M68 188 606 122" stroke="#e4d9c2" stroke-opacity=".58" stroke-width="3" stroke-linecap="round"/>
-                <path d="M185 180v53m12-55v52m162-73v53m12-55v52m157-72v52m12-55v52" stroke="#cbc0a6" stroke-width="5" opacity=".65"/>
-                <path d="m426 146 6-10 5 7 6-11 4 6 6-8" fill="none" stroke="#343a2e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M444 153q-2 7-4 12m14-15q-1 8-3 13" fill="none" stroke="#c5aa72" stroke-width="2" stroke-linecap="round" opacity=".85"/>
-                <g class="defect-marker">
-                  <path d="M409 103h-12v12m45-12h12v12m-45 51h-12v-12m45 12h12v-12" fill="none" stroke="#d9c79f" stroke-width="1.4"/>
-                  <path d="M450 111h69" stroke="#d9c79f" stroke-width="1"/><rect x="516" y="100" width="102" height="22" rx="2" fill="#454c3a" stroke="#b6a57f"/><text x="526" y="114" fill="#eee6d5" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">DETECTED · TRACKED</text>
-                  <circle cx="432" cy="132" r="4" fill="#d9c79f" stroke="#4a513e" stroke-width="2"/>
+                <rect width="680" height="360" fill="url(#industrial-sky)"/>
+                <path d="M0 183 102 147l80 31 79-51 90 46 95-39 104 43 130-44v103H0Z" fill="#59685c" opacity=".72"/>
+                <g opacity=".84" fill="#3c4844">
+                  <path d="M298 176V96h18v80m8 0V72h13v104m19 0V111h22v65m20 0V82h13v94m18 0V123h27v53m17 0V89h14v87m23 0V111h21v65m12 0V67h11v109m21 0V100h23v76m18 0V82h13v94m17 0V119h29v57"/>
+                  <path d="M291 123h91v5h-91m24-26h78v5h-78m66 53h106v5H381m80-44h81v5h-81m50 28h112v5H511" fill="#4a5750"/>
+                  <path d="M305 179v-65m25 65V82m44 97v-53m49 53V89m65 90v-57m47 57V75m48 104v-62m40 62V91m45 88v-54" fill="none" stroke="#b7a98b" stroke-opacity=".52" stroke-width="2"/>
                 </g>
-                <g class="inspection-drone" transform="translate(238 63)" filter="url(#drone-shadow)">
-                  <path d="M-40-13-13-3m53-10L13-3M-39 14-13 4m52 10L13 4" stroke="#d8cfbb" stroke-width="4" stroke-linecap="round"/>
-                  <ellipse cx="-43" cy="-15" rx="15" ry="4" fill="none" stroke="#d8cfbb" stroke-width="1.5"/><ellipse cx="43" cy="-15" rx="15" ry="4" fill="none" stroke="#d8cfbb" stroke-width="1.5"/><ellipse cx="-43" cy="16" rx="15" ry="4" fill="none" stroke="#d8cfbb" stroke-width="1.5"/><ellipse cx="43" cy="16" rx="15" ry="4" fill="none" stroke="#d8cfbb" stroke-width="1.5"/>
-                  <path d="M-16-6Q0-17 16-6L20 1 13 8H-13L-20 1Z" fill="#d0c5ae" stroke="#4c533f" stroke-width="1.4"/><path d="M-5 8v8l5 4 5-4V8" fill="#8f917b"/><circle cy="2" r="4" fill="#687254" stroke="#efe5d1" stroke-width="1.3"/>
+                <path d="M0 191 680 137v223H0Z" fill="#4b574a" opacity=".72"/>
+                <g class="tank-scene">
+                  <ellipse cx="116" cy="51" rx="137" ry="32" fill="#d9d2c2" stroke="#727b75" stroke-width="3"/>
+                  <path d="M-21 52Q113 20 253 53v252H-21Z" fill="url(#tank-face)" stroke="#707875" stroke-width="2"/>
+                  <path d="M-17 104Q116 73 250 104M-17 177Q116 146 250 177M-17 250Q116 219 250 250" fill="none" stroke="#737b76" stroke-width="4" opacity=".78"/>
+                  <path d="M-14 109Q111 81 249 109M-14 182Q111 154 249 182M-14 255Q111 227 249 255" fill="none" stroke="#f1e9d9" stroke-width="2" opacity=".68"/>
+                  <path d="M19 65v234m194-235v234" stroke="#6e756f" stroke-width="2" opacity=".58"/>
+                  <path d="M72 114q13 12 5 31t11 27m99-1q-16 9-8 25t-6 19m-80 18q8 8 0 22" fill="none" stroke="#8d674c" stroke-width="5" opacity=".65"/>
+                  <path d="M72 114q13 12 5 31t11 27m99-1q-16 9-8 25t-6 19" fill="none" stroke="#513f32" stroke-width="1.4"/>
+                  <path d="M0 77q125-26 239 0M0 284q119-25 239 0" fill="none" stroke="#59635c" stroke-width="2"/>
                 </g>
-                <path class="drone-scan" d="m238 84 178 61" stroke="#d9c79f" stroke-width="1" stroke-dasharray="4 5"/>
-                <g class="scan-frame"><animateMotion dur="17s" repeatCount="indefinite" path="M112 198C247 174 348 160 540 137"/><rect x="-25" y="-19" width="50" height="38" rx="2" fill="#d9c79f" fill-opacity=".04" stroke="#d9c79f" stroke-width="1.3"/><path d="M0-17v34M-23 0h46" stroke="#d9c79f" stroke-opacity=".6" stroke-width=".7"/></g>
-                <text x="26" y="36" fill="#eee6d5" font-size="9" font-family="Arial,sans-serif" letter-spacing="1.4">PIPELINE INSPECTION · OBJECT TRACKING</text>
+                <g class="rear-pipework" fill="none" stroke-linecap="round">
+                  <path d="M270 218 680 174" stroke="#303b36" stroke-width="29"/><path d="M270 212 680 168" stroke="url(#pipe-metal)" stroke-width="23"/><path d="M279 205 679 162" stroke="#e1dfd0" stroke-opacity=".55" stroke-width="2"/>
+                  <path d="M330 193v49m9-50v48m125-62v48m9-49v48m119-60v48m9-49v48" stroke="#a9a795" stroke-width="5"/>
+                </g>
+                <path d="M-26 291 710 204" stroke="#222a27" stroke-width="73" stroke-linecap="round" opacity=".46"/>
+                <path d="M-26 276 710 189" stroke="#3b4540" stroke-width="65" stroke-linecap="round"/>
+                <path d="M-26 265 710 178" stroke="url(#pipe-metal)" stroke-width="55" stroke-linecap="round"/>
+                <path d="M-16 251 701 166" stroke="#e7e2d3" stroke-opacity=".78" stroke-width="4" stroke-linecap="round"/>
+                <path d="M-8 269 708 184" stroke="#353e39" stroke-opacity=".76" stroke-width="2" stroke-linecap="round"/>
+                <path d="M62 245v50m13-52v49m139-68v52m13-54v50m143-69v52m13-54v50m145-69v52m13-54v50m111-63v50m13-52v48" stroke="#c0bda9" stroke-width="8" opacity=".72"/>
+                <path d="M68 248v44m139-62v44m156-64v44m158-63v43m124-54v41" stroke="#414a44" stroke-width="3"/>
+                <path d="m291 229 7-9 4 7 7-11 4 6 8-10" fill="none" stroke="#282f2b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M282 244q-6 11-3 19m13-21q-2 14 4 20m8-22q-1 12 5 18" fill="none" stroke="#c89855" stroke-width="2" opacity=".86"/>
+                <path d="M460 188 467 177l6 8 7-12 6 7 8-11" fill="none" stroke="#292f2b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <g class="inspection-drone" filter="url(#drone-shadow)">
+                  <animateTransform attributeName="transform" type="translate" values="442 88;454 80;432 92;442 88" dur="15s" repeatCount="indefinite"/>
+                  <path d="M-108-6-36 3m72 0 72-10M-98 37-35 18m70 0 63 19" fill="none" stroke="#292f2b" stroke-width="13" stroke-linecap="round"/>
+                  <path d="M-107-8-35 1m70 0 72-10M-97 35-34 16m68 0 62 19" fill="none" stroke="#858d83" stroke-width="3" stroke-linecap="round"/>
+                  <g fill="#252c28" stroke="#a0a394" stroke-width="2"><circle cx="-111" cy="-12" r="12"/><circle cx="111" cy="-14" r="12"/><circle cx="-101" cy="39" r="11"/><circle cx="99" cy="39" r="11"/></g>
+                  <g class="rotor-blur" fill="none" stroke="#d9ddcf" stroke-opacity=".45" stroke-width="2"><ellipse cx="-111" cy="-14" rx="30" ry="6"/><ellipse cx="111" cy="-16" rx="30" ry="6"/><ellipse cx="-101" cy="37" rx="25" ry="5"/><ellipse cx="99" cy="37" rx="25" ry="5"/></g>
+                  <path d="M-42-2q6-17 21-18h42q17 2 21 18l-6 28H-35Z" fill="url(#drone-shell)" stroke="#a7aa9e" stroke-width="2"/>
+                  <path d="M-23-15h46m-51 9h56" stroke="#717b73" stroke-width="2"/>
+                  <circle cx="-29" cy="7" r="5" fill="#afc286" stroke="#242b27" stroke-width="2"/><circle cx="29" cy="7" r="5" fill="#c7a56d" stroke="#242b27" stroke-width="2"/>
+                  <path d="M-8 27v18l-12 18m28-36v18l12 18" fill="none" stroke="#343c37" stroke-width="7" stroke-linecap="round"/>
+                  <path d="M-20 62h40" stroke="#191f1c" stroke-width="8" stroke-linecap="round"/>
+                  <path d="M-13 32v12h26V32" fill="#333a35" stroke="#a4a697" stroke-width="1.5"/>
+                  <rect x="-10" y="42" width="20" height="17" rx="4" fill="#202724" stroke="#858d83" stroke-width="1.3"/><circle cy="50" r="6" fill="#62736d" stroke="#d9d6c9" stroke-width="1.5"/><circle cy="50" r="2.3" fill="#1b2422"/>
+                </g>
+                <path class="drone-scan" d="M435 146 316 238" stroke="#e5b45d" stroke-opacity=".58" stroke-width="1.5" stroke-dasharray="4 5"/>
+                <g class="defect-marker leak-box"><path d="M172 218h-12v12m166-12h12v12m-178 41v12h12m166 0h12v-12" fill="none" stroke="#e99b42" stroke-width="2.5"/><rect x="176" y="194" width="89" height="20" rx="1" fill="#3e3830" stroke="#e99b42" stroke-width="1.5"/><text x="185" y="208" fill="#f5c46b" font-size="10" font-family="Arial,sans-serif" font-weight="700">LEAK</text><circle cx="293" cy="239" r="4" fill="#f5b54d" stroke="#403b32" stroke-width="2"/></g>
+                <g class="defect-marker crack-box"><path d="M448 177h-12v12m147-12h12v12m-159 45v12h12m135 0h12v-12" fill="none" stroke="#f06430" stroke-width="2.5"/><rect x="456" y="153" width="94" height="20" rx="1" fill="#3b3430" stroke="#f06430" stroke-width="1.5"/><text x="466" y="167" fill="#ffc16c" font-size="10" font-family="Arial,sans-serif" font-weight="700">CRACK</text><circle cx="468" cy="191" r="4" fill="#ffc16c" stroke="#423831" stroke-width="2"/></g>
+                <g class="scan-frame"><animateMotion dur="18s" repeatCount="indefinite" path="M111 262C243 247 370 225 566 211"/><rect x="-29" y="-23" width="58" height="46" rx="2" fill="#e5b45d" fill-opacity=".035" stroke="#e6b65e" stroke-width="1.4"/><path d="M0-21v42M-27 0h54" stroke="#f3d28f" stroke-opacity=".7" stroke-width=".8"/></g>
+                <g fill="#343d38" opacity=".75"><path d="M0 332 680 252v108H0Z"/><path d="M0 343 680 266" stroke="#c0a875" stroke-width="2"/></g>
+                <text x="24" y="29" fill="#f1eadb" font-size="9" font-family="Arial,sans-serif" letter-spacing="1.25">PIPELINE INSPECTION · LIVE DETECTION + TRACKING</text>
               </svg>
             </div>
             <div class="project-card-body">
@@ -189,9 +226,9 @@
                   <linearGradient id="candidate-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf6"/><stop offset="1" stop-color="#e8dfcf"/></linearGradient>
                   <filter id="card-shadow" x="-30%" y="-30%" width="170%" height="180%"><feGaussianBlur in="SourceAlpha" stdDeviation="4"/><feOffset dy="5"/><feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
                 </defs>
-                <rect width="680" height="280" fill="#414638"/><path d="M0 216 680 176v104H0Z" fill="#4d5441"/><path d="M40 235 642 198" stroke="#cdbd98" stroke-opacity=".24"/>
+                <rect width="680" height="280" fill="#454746"/><path d="M0 216 680 176v104H0Z" fill="#555752"/><path d="M40 235 642 198" stroke="#d4c6a9" stroke-opacity=".24"/>
                 <g class="candidate-links" fill="none" stroke="#d9c79f" stroke-width="1.2" stroke-dasharray="3 5">
-                  <path d="M213 113C277 81 310 85 369 113"/><path d="M213 148C280 176 312 165 369 147"/><path d="M477 111C509 111 523 113 541 124"/><path d="M477 149C510 149 525 143 541 133"/>
+                  <path d="M220 139C238 128 260 128 280 139"/><path d="M220 170C239 181 260 181 280 170"/>
                 </g>
                 <g class="resume-card" filter="url(#card-shadow)" transform="translate(54 51) rotate(-4 80 88)">
                   <path d="M4 4h151l18 18v168H4Z" fill="url(#candidate-paper)" stroke="#c7b893"/><path d="M155 4v19h18" fill="#e7decd" stroke="#c7b893"/>
@@ -211,7 +248,13 @@
                   <path d="M18 151h117M18 161h93" stroke="#b9b09f" stroke-width="2" stroke-linecap="round"/>
                   <text x="18" y="188" fill="#727662" font-size="7" font-family="Arial,sans-serif" letter-spacing="1">JOB BRIEF</text>
                 </g>
-                <g class="match-result-card" filter="url(#card-shadow)" transform="translate(520 93)">
+                <g class="matching-links" fill="none" stroke="#d9c79f" stroke-width="1.2" stroke-dasharray="3 5">
+                  <path d="M451 138H479M505 138H535"/>
+                </g>
+                <g class="match-node" transform="translate(492 138)">
+                  <circle r="13" fill="#596148" stroke="#ddc999" stroke-width="1.2"/><circle cx="-4" cy="-3" r="2.2" fill="#e8d8b5"/><circle cx="4" cy="-3" r="2.2" fill="#e8d8b5"/><circle cy="4" r="2.2" fill="#e8d8b5"/><path d="m-3-2 6 0m-5 2 2 4m5-4-2 4" stroke="#d6c599" stroke-width=".8"/>
+                </g>
+                <g class="match-result-card" filter="url(#card-shadow)" transform="translate(535 96)">
                   <path d="M0 0h116v81H0Z" fill="#737b5d" stroke="#d0c19e"/><text x="13" y="22" fill="#f1eadb" font-size="8" font-family="Arial,sans-serif" letter-spacing="1.2">MATCH</text><path d="M13 31h88" stroke="#d8c89f" stroke-opacity=".65"/><text x="13" y="49" fill="#fffaf0" font-size="11" font-family="Georgia,serif">Contextual</text><text x="13" y="63" fill="#fffaf0" font-size="11" font-family="Georgia,serif">alignment</text>
                 </g>
                 <g class="feedback-card" transform="translate(492 198)">
@@ -231,38 +274,49 @@
           </article>
 
           <article class="project project-card project-wide reveal" aria-labelledby="farmwise-title">
-            <div class="farm-visual motion-diagram" role="img" aria-label="Isometric miniature farm with four crop plots, layered soil, crop rows, and a highlighted recommended plot">
+            <div class="farm-visual motion-diagram" role="img" aria-label="Crop rotation sequence across three seasons, showing different crop stages, soil layers, and the next point in the cycle">
               <svg class="scene-svg farm-scene" viewBox="0 0 680 320" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
                 <defs>
-                  <linearGradient id="farm-ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#85896a"/><stop offset="1" stop-color="#62694f"/></linearGradient>
-                  <linearGradient id="soil-side" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#aa9470"/><stop offset="1" stop-color="#756349"/></linearGradient>
+                  <linearGradient id="farm-ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#75865e"/><stop offset="1" stop-color="#4e6147"/></linearGradient>
+                  <linearGradient id="soil-side" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#bb9568"/><stop offset="1" stop-color="#76563f"/></linearGradient>
                   <filter id="farm-shadow" x="-20%" y="-25%" width="150%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="6"/><feOffset dy="8"/><feComponentTransfer><feFuncA type="linear" slope=".28"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                  <marker id="rotation-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 8 4 0 8Z" fill="#e5c990"/></marker>
                 </defs>
-                <rect width="680" height="320" fill="#555d47"/><path d="M0 243 680 207v113H0Z" fill="#60684f"/>
-                <ellipse cx="325" cy="259" rx="244" ry="39" fill="#282d23" opacity=".25"/>
+                <rect width="680" height="320" fill="#58634b"/><path d="M0 210 680 194v126H0Z" fill="#647454"/>
+                <path d="M0 238 680 222v98H0Z" fill="url(#soil-side)"/><path d="M0 258 680 242M0 282 680 266M0 302 680 286" stroke="#4c3d30" stroke-opacity=".42" stroke-width="2"/>
+                <path d="M24 45H656" stroke="#e7dcc4" stroke-opacity=".22"/>
+                <text x="27" y="31" fill="#f1eadb" font-size="9" font-family="Arial,sans-serif" letter-spacing="1.4">ONE FIELD · A ROTATION THROUGH THREE SEASONS</text>
+                <ellipse cx="338" cy="225" rx="293" ry="25" fill="#272b23" opacity=".23"/>
                 <g class="farm-maquette" filter="url(#farm-shadow)">
-                  <path d="m85 151 260-91 262 89-263 98Z" fill="url(#farm-ground)" stroke="#cabea0" stroke-width="1.2"/>
-                  <path d="m85 151 259 96v18L85 171Z" fill="#8b7759"/><path d="m344 247 263-98v18L344 265Z" fill="url(#soil-side)"/>
-                  <path d="m104 150 241-79 92 32-242 82Z" fill="#737b5e" stroke="#c9bd9f" stroke-opacity=".6"/>
-                  <path d="m196 185 243-82 93 32-244 83Z" fill="#747b5d" stroke="#c9bd9f" stroke-opacity=".6"/>
-                  <path d="m105 150 92 35v62l-92-34Z" fill="#727a5b" stroke="#c9bd9f" stroke-opacity=".6"/>
-                  <path d="m197 185 91 34v62l-91-34Z" fill="#727a5b" stroke="#c9bd9f" stroke-opacity=".6"/>
-                  <path d="m439 103 93 32v62l-93-32Z" fill="#7a805f" stroke="#d7c69c" stroke-width="1.8"/>
-                  <path d="m288 219 244-84v62l-244 84Z" fill="#737b5a" stroke="#c9bd9f" stroke-opacity=".6"/>
-                  <g class="crop-row crop-row-one" stroke="#d0c49f" stroke-opacity=".72" stroke-width="1.3"><path d="m119 145 77 29m-62-35 77 29m-62-35 77 29m-62-35 77 29"/></g>
-                  <g class="crop-row crop-row-two" stroke="#c4bd9c" stroke-opacity=".72" stroke-width="1.3"><path d="m216 180 76 29m-61-35 76 29m-61-35 76 29m-61-35 76 29"/></g>
-                  <g class="crop-row crop-row-three" stroke="#d6c89e" stroke-width="1.5"><path d="m454 102 77 27m-62-33 77 27m-62-33 77 27m-62-33 77 27"/></g>
-                  <g class="crop-row crop-row-four" stroke="#c6bf9d" stroke-opacity=".7" stroke-width="1.3"><path d="m306 214 77 27m-62-33 77 27m-62-33 77 27m-62-33 77 27"/></g>
-                  <g class="field-plants" fill="#a8ad83" stroke="#e2d4ad" stroke-width="1">
-                    <path d="M148 139v-15m0 7-6-5m6 9 6-6M172 148v-15m0 7-6-5m6 9 6-6M246 175v-15m0 7-6-5m6 9 6-6M271 184v-15m0 7-6-5m6 9 6-6M484 93V78m0 7-6-5m6 9 6-6M510 102V87m0 7-6-5m6 9 6-6M340 208v-15m0 7-6-5m6 9 6-6M367 198v-15m0 7-6-5m6 9 6-6"/>
+                  <path d="M44 148 340 75 636 148 340 222Z" fill="url(#farm-ground)" stroke="#d0c29f" stroke-width="1.2"/>
+                  <path d="m44 148 296 74v12L44 159Z" fill="#9b7855"/><path d="m340 222 296-74v12l-296 74Z" fill="url(#soil-side)"/>
+                  <g class="season-plot plot-one">
+                    <path d="m62 146 77-37 78 37-78 39Z" fill="#78835f" stroke="#d5c7a7"/>
+                    <g class="crop-row crop-row-one" fill="none" stroke="#e3d4ad" stroke-width="1.5"><path d="m79 143 60 29m-43-37 60 29m-43-37 60 29m-43-37 60 29"/></g>
+                    <g class="plot-low-crop" fill="#bbc091" stroke="#eee0b7" stroke-width="1"><path d="M105 141v-14m0 8-6-5m6 9 6-7m27 19v-13m0 7-6-5m6 9 6-7m28-18v-14m0 8-6-5m6 9 6-7m24 20v-14m0 8-6-5m6 9 6-7"/></g>
                   </g>
-                  <path class="recommended-outline" d="m439 103 93 32v62l-93-32Z" fill="none" stroke="#ead8ad" stroke-width="2.2" stroke-dasharray="5 4"/>
-                  <g class="recommended-label" transform="translate(471 62)"><rect width="119" height="23" rx="2" fill="#434a38" stroke="#c7b486"/><text x="10" y="15" fill="#f0e7d5" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">RECOMMENDED PLOT</text><path d="m17 23-6 15" stroke="#d9c79f"/></g>
-                  <g class="farm-network" fill="none" stroke="#dfd0ae" stroke-width="1" stroke-dasharray="3 4"><path d="M144 224 246 255 343 218 476 194"/><path d="M246 255 275 158 476 194"/><path d="M343 218 485 135"/></g>
-                  <g fill="#e1cf9f" stroke="#535a44" stroke-width="2"><circle cx="144" cy="224" r="4"/><circle cx="246" cy="255" r="4"/><circle cx="343" cy="218" r="4"/><circle cx="476" cy="194" r="4"/></g>
+                  <g class="season-plot plot-two">
+                    <path d="m262 146 78-37 78 37-78 39Z" fill="#687854" stroke="#d5c7a7"/>
+                    <g class="crop-row crop-row-two" fill="none" stroke="#d4ca9f" stroke-width="1.6"><path d="m278 143 62 29m-44-37 62 29m-44-37 62 29m-44-37 62 29"/></g>
+                    <g class="plot-tall-crop" fill="none" stroke="#e0d2a3" stroke-width="1.5" stroke-linecap="round"><path d="M292 139v-28m0 9-6-6m6 11 6-7m31 29v-31m0 11-6-6m6 11 6-7m31 30v-29m0 9-6-6m6 11 6-7m29 17v-28m0 9-6-6m6 11 6-7"/></g>
+                  </g>
+                  <g class="season-plot plot-three">
+                    <path d="m462 146 78-37 78 37-78 39Z" fill="#75805d" stroke="#e2d1a7" stroke-width="1.7"/>
+                    <g class="crop-row crop-row-three" fill="none" stroke="#d9c89c" stroke-width="1.5"><path d="m478 143 62 29m-44-37 62 29m-44-37 62 29m-44-37 62 29"/></g>
+                    <g class="plot-cover-crop" fill="#aeb78a" stroke="#e1d3aa" stroke-width="1"><path d="M494 142q-8-14-15-4 7 8 15 4m0 0q4-15 13-10-2 9-13 10m29-10q-8-14-15-4 7 8 15 4m0 0q4-15 13-10-2 9-13 10m27 18q-8-14-15-4 7 8 15 4m0 0q4-15 13-10-2 9-13 10m29-10q-8-14-15-4 7 8 15 4m0 0q4-15 13-10-2 9-13 10"/></g>
+                    <path class="recommended-outline" d="m462 146 78-37 78 37-78 39Z" fill="none" stroke="#f1dda9" stroke-width="2.2" stroke-dasharray="5 4"/>
+                  </g>
+                  <path class="farm-network rotation-route" d="M212 84C230 72 247 72 264 84H412C430 72 447 72 464 84" fill="none" stroke="#e5c990" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#rotation-arrow)"/>
+                  <circle class="rotation-cursor" r="4" fill="#f1dda9" stroke="#454c3a" stroke-width="1.5"><animateMotion dur="8s" repeatCount="indefinite" path="M212 84C230 72 247 72 264 84H412C430 72 447 72 464 84"/></circle>
+                  <g class="root-network" fill="none" stroke="#d8c5a3" stroke-opacity=".68" stroke-width="1"><path d="M139 184v22m0-10-9 10m9-5 8 9m-8-15-6 7M340 184v34m0-13-10 13m10-8 12 10m-12-25 8 8m200-23v24m0-13-8 10m8-5 10 9"/></g>
+                  <path class="recommended-outline" d="M467 92h140" fill="none" stroke="#f1dda9" stroke-width="1" stroke-dasharray="3 4"/>
+                  <g class="farm-nodes" fill="#e1cf9f" stroke="#535a44" stroke-width="1.5"><circle cx="139" cy="184" r="3.5"/><circle cx="340" cy="184" r="3.5"/><circle cx="540" cy="184" r="3.5"/></g>
                 </g>
-                <text x="27" y="34" fill="#eee6d5" font-size="9" font-family="Arial,sans-serif" letter-spacing="1.4">CROP ROTATION · SOIL + SEQUENCE</text>
-                <g class="farm-model-note" transform="translate(548 230)"><rect width="93" height="43" rx="2" fill="#414839" stroke="#c5b68f"/><text x="10" y="17" fill="#eee6d5" font-size="7" font-family="Arial,sans-serif" letter-spacing="1">GCN · LSTM</text><path d="M10 25h70M10 32h48" stroke="#a8ad83" stroke-width="1.5"/></g>
+                <text x="103" y="101" fill="#f0e7d6" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">SEASON 01</text><text x="303" y="101" fill="#f0e7d6" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">SEASON 02</text>
+                <g class="recommended-label" transform="translate(482 54)"><rect width="126" height="24" rx="2" fill="#454d3b" stroke="#d5bd88"/><text x="10" y="16" fill="#f4ead6" font-size="8" font-family="Arial,sans-serif" letter-spacing=".8">NEXT IN SEQUENCE</text></g>
+                <text x="503" y="101" fill="#f4ead6" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">SEASON 03</text>
+                <g class="farm-model-note" transform="translate(545 270)"><rect width="103" height="31" rx="2" fill="#454238" stroke="#c5b68f"/><text x="10" y="19" fill="#eee6d5" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">GCN · LSTM</text></g>
+                <text x="27" y="292" fill="#f0e7d6" font-size="8" font-family="Arial,sans-serif" letter-spacing="1.1">SOIL + PREVIOUS CROPS → NEXT CYCLE</text>
               </svg>
             </div>
             <div class="project-card-body">
