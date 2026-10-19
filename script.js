@@ -1,3 +1,5 @@
+import { projects } from "./projects/project-data.js";
+
 const menuButton = document.querySelector(".menu-toggle");
 const siteNavigation = document.querySelector(".site-nav");
 
@@ -34,6 +36,25 @@ const year = document.querySelector("#current-year");
 if (year) year.textContent = new Date().getFullYear();
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+document.querySelectorAll("[data-project-preview]").forEach((preview) => {
+  const project = projects[preview.dataset.projectPreview];
+  const video = preview.querySelector("video");
+  if (!project?.previewVideo || !video) return;
+  video.src = project.previewVideo;
+  video.hidden = false;
+  preview.classList.add("has-preview-video");
+  if (prefersReducedMotion) {
+    video.autoplay = false;
+    video.pause();
+  } else {
+    video.play().catch(() => {});
+  }
+  video.addEventListener("error", () => {
+    video.hidden = true;
+    preview.classList.remove("has-preview-video");
+  });
+});
+
 const revealItems = document.querySelectorAll(".reveal");
 
 if (!prefersReducedMotion) {

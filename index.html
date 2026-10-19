@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -39,8 +39,8 @@
           <p class="eyebrow"><span class="eyebrow-line"></span> Intelligence, made practical · Tunisia</p>
           <h1 id="hero-title"><span class="name-line"><span>Mariem</span></span><span class="name-line"><span>Nasri</span></span></h1>
           <p class="hero-role">AI &amp; Data Science Engineer</p>
-          <div class="hero-credential"><span>Computer Science Engineer</span><span>Data Science Specialization · ESPRIT</span></div>
-          <p class="hero-intro">I build intelligent systems that turn complex data into practical, real-world solutions.</p>
+          <div class="hero-credential"><span>Data Science Specialization · ESPRIT</span></div>
+          <p class="hero-intro">I build intelligent systems that turn complex data into practical solutions.</p>
           <div class="hero-actions">
             <a class="button button-dark" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
@@ -50,7 +50,6 @@
           <div class="portrait-frame">
             <img src="assets/mariem-portrait.jpg" width="1000" height="1250" alt="Portrait of Mariem Nasri" fetchpriority="high">
           </div>
-          <p class="portrait-note"><span>Applied intelligence</span><span>For real-world challenges</span><i aria-hidden="true">✳</i></p>
           <span class="hero-index" aria-hidden="true">MN / 01</span>
         </div>
         <a class="scroll-cue" href="#expertise"><span>Scroll to explore</span><i aria-hidden="true">↓</i></a>
@@ -60,8 +59,8 @@
         <div class="expertise-inner">
           <div class="expertise-item reveal"><span class="expertise-index">01</span><span>AI &amp; Data Science<br>Engineering</span></div>
           <div class="expertise-item reveal"><span class="expertise-index">02</span><span>Computer<br>Vision</span></div>
-          <div class="expertise-item reveal"><span class="expertise-index">03</span><span>LLMs &amp; Multi-Agent<br>Systems</span></div>
-          <div class="expertise-item reveal"><span class="expertise-index">04</span><span>End-to-End AI<br>Applications</span></div>
+          <div class="expertise-item reveal"><span class="expertise-index">03</span><span>LLMs &amp; Systems with<br>Multiple Agents</span></div>
+          <div class="expertise-item reveal"><span class="expertise-index">04</span><span>Complete AI<br>Applications</span></div>
         </div>
       </section>
 
@@ -79,7 +78,7 @@
             <p class="project-summary">Turning scanned financial agreements into structured information with a document intelligence pipeline designed for sensitive data.</p>
             <div class="project-tags"><span>OCR</span><span>LLM agents</span><span>FastAPI</span><span>React</span><span>Docker</span></div>
           </div>
-          <div class="doc-visual motion-diagram" role="img" aria-label="Floating financial agreement pages with OCR fields moving into structured data cards and a five-node agent network">
+              <div class="doc-visual motion-diagram" role="img" aria-label="Floating financial agreement pages with OCR fields moving into structured data cards and a network of five agents">
             <svg class="scene-svg docai-scene" viewBox="0 0 640 410" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
               <defs>
                 <linearGradient id="doc-floor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#777a79"/><stop offset="1" stop-color="#4b4d4c"/></linearGradient>
@@ -137,90 +136,35 @@
             </svg>
           </div>
           <div class="project-details">
-            <div><span class="detail-label">Approach</span><p>Benchmarked five OCR approaches, selected GLM-OCR, and built a five-agent LLM architecture for dynamic field extraction. Local Ollama inference supported data residency needs.</p></div>
-            <div><span class="detail-label">Evaluation</span><p><strong>7.32%</strong> character error rate <span class="detail-divider">/</span> <strong>0.754</strong> TEDS</p></div>
+            <div><span class="detail-label">Approach</span><p>Benchmarked five OCR approaches, selected GLM-OCR, and built a system with five LLM agents for dynamic field extraction. Local Ollama inference supported data residency needs.</p></div>
+            <div><span class="detail-label">Evaluation</span><p><strong>~93%</strong> documents read correctly <span class="detail-divider">/</span> <strong>~98.4%</strong> tables rebuilt</p></div>
             <div><span class="detail-label">Application</span><p>Integrated with FastAPI and React, Keycloak authentication, Docker deployment, and Prometheus/Grafana monitoring.</p></div>
           </div>
+          <a class="case-study-link" href="projects/docai.html">Read the DocAI case study <span aria-hidden="true">↗</span></a>
         </article>
 
         <div class="project-grid">
           <article class="project project-card reveal" aria-labelledby="uav-title">
-            <div class="uav-visual motion-diagram" role="img" aria-label="Isometric miniature pipeline inspection scene with a drone scanning a tracked defect">
-              <svg class="scene-svg pipeline-scene" viewBox="0 0 680 360" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-                <defs>
-                  <linearGradient id="industrial-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#9daab2"/><stop offset=".58" stop-color="#697b7c"/><stop offset="1" stop-color="#4d5a4a"/></linearGradient>
-                  <linearGradient id="tank-face" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#ddd5c2"/><stop offset=".72" stop-color="#b7b5a6"/><stop offset="1" stop-color="#7f867e"/></linearGradient>
-                  <linearGradient id="pipe-metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d4d2c4"/><stop offset=".22" stop-color="#92988d"/><stop offset=".52" stop-color="#585f59"/><stop offset=".75" stop-color="#a6a696"/><stop offset="1" stop-color="#414943"/></linearGradient>
-                  <linearGradient id="drone-shell" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424944"/><stop offset="1" stop-color="#171d1b"/></linearGradient>
-                  <filter id="drone-shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceAlpha" stdDeviation="4"/><feOffset dy="5"/><feComponentTransfer><feFuncA type="linear" slope=".42"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-                  <filter id="soft-haze" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="8"/></filter>
-                </defs>
-                <rect width="680" height="360" fill="url(#industrial-sky)"/>
-                <path d="M0 183 102 147l80 31 79-51 90 46 95-39 104 43 130-44v103H0Z" fill="#59685c" opacity=".72"/>
-                <g opacity=".84" fill="#3c4844">
-                  <path d="M298 176V96h18v80m8 0V72h13v104m19 0V111h22v65m20 0V82h13v94m18 0V123h27v53m17 0V89h14v87m23 0V111h21v65m12 0V67h11v109m21 0V100h23v76m18 0V82h13v94m17 0V119h29v57"/>
-                  <path d="M291 123h91v5h-91m24-26h78v5h-78m66 53h106v5H381m80-44h81v5h-81m50 28h112v5H511" fill="#4a5750"/>
-                  <path d="M305 179v-65m25 65V82m44 97v-53m49 53V89m65 90v-57m47 57V75m48 104v-62m40 62V91m45 88v-54" fill="none" stroke="#b7a98b" stroke-opacity=".52" stroke-width="2"/>
-                </g>
-                <path d="M0 191 680 137v223H0Z" fill="#4b574a" opacity=".72"/>
-                <g class="tank-scene">
-                  <ellipse cx="116" cy="51" rx="137" ry="32" fill="#d9d2c2" stroke="#727b75" stroke-width="3"/>
-                  <path d="M-21 52Q113 20 253 53v252H-21Z" fill="url(#tank-face)" stroke="#707875" stroke-width="2"/>
-                  <path d="M-17 104Q116 73 250 104M-17 177Q116 146 250 177M-17 250Q116 219 250 250" fill="none" stroke="#737b76" stroke-width="4" opacity=".78"/>
-                  <path d="M-14 109Q111 81 249 109M-14 182Q111 154 249 182M-14 255Q111 227 249 255" fill="none" stroke="#f1e9d9" stroke-width="2" opacity=".68"/>
-                  <path d="M19 65v234m194-235v234" stroke="#6e756f" stroke-width="2" opacity=".58"/>
-                  <path d="M72 114q13 12 5 31t11 27m99-1q-16 9-8 25t-6 19m-80 18q8 8 0 22" fill="none" stroke="#8d674c" stroke-width="5" opacity=".65"/>
-                  <path d="M72 114q13 12 5 31t11 27m99-1q-16 9-8 25t-6 19" fill="none" stroke="#513f32" stroke-width="1.4"/>
-                  <path d="M0 77q125-26 239 0M0 284q119-25 239 0" fill="none" stroke="#59635c" stroke-width="2"/>
-                </g>
-                <g class="rear-pipework" fill="none" stroke-linecap="round">
-                  <path d="M270 218 680 174" stroke="#303b36" stroke-width="29"/><path d="M270 212 680 168" stroke="url(#pipe-metal)" stroke-width="23"/><path d="M279 205 679 162" stroke="#e1dfd0" stroke-opacity=".55" stroke-width="2"/>
-                  <path d="M330 193v49m9-50v48m125-62v48m9-49v48m119-60v48m9-49v48" stroke="#a9a795" stroke-width="5"/>
-                </g>
-                <path d="M-26 291 710 204" stroke="#222a27" stroke-width="73" stroke-linecap="round" opacity=".46"/>
-                <path d="M-26 276 710 189" stroke="#3b4540" stroke-width="65" stroke-linecap="round"/>
-                <path d="M-26 265 710 178" stroke="url(#pipe-metal)" stroke-width="55" stroke-linecap="round"/>
-                <path d="M-16 251 701 166" stroke="#e7e2d3" stroke-opacity=".78" stroke-width="4" stroke-linecap="round"/>
-                <path d="M-8 269 708 184" stroke="#353e39" stroke-opacity=".76" stroke-width="2" stroke-linecap="round"/>
-                <path d="M62 245v50m13-52v49m139-68v52m13-54v50m143-69v52m13-54v50m145-69v52m13-54v50m111-63v50m13-52v48" stroke="#c0bda9" stroke-width="8" opacity=".72"/>
-                <path d="M68 248v44m139-62v44m156-64v44m158-63v43m124-54v41" stroke="#414a44" stroke-width="3"/>
-                <path d="m291 229 7-9 4 7 7-11 4 6 8-10" fill="none" stroke="#282f2b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M282 244q-6 11-3 19m13-21q-2 14 4 20m8-22q-1 12 5 18" fill="none" stroke="#c89855" stroke-width="2" opacity=".86"/>
-                <path d="M460 188 467 177l6 8 7-12 6 7 8-11" fill="none" stroke="#292f2b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                <g class="inspection-drone" filter="url(#drone-shadow)">
-                  <animateTransform attributeName="transform" type="translate" values="442 88;454 80;432 92;442 88" dur="15s" repeatCount="indefinite"/>
-                  <path d="M-108-6-36 3m72 0 72-10M-98 37-35 18m70 0 63 19" fill="none" stroke="#292f2b" stroke-width="13" stroke-linecap="round"/>
-                  <path d="M-107-8-35 1m70 0 72-10M-97 35-34 16m68 0 62 19" fill="none" stroke="#858d83" stroke-width="3" stroke-linecap="round"/>
-                  <g fill="#252c28" stroke="#a0a394" stroke-width="2"><circle cx="-111" cy="-12" r="12"/><circle cx="111" cy="-14" r="12"/><circle cx="-101" cy="39" r="11"/><circle cx="99" cy="39" r="11"/></g>
-                  <g class="rotor-blur" fill="none" stroke="#d9ddcf" stroke-opacity=".45" stroke-width="2"><ellipse cx="-111" cy="-14" rx="30" ry="6"/><ellipse cx="111" cy="-16" rx="30" ry="6"/><ellipse cx="-101" cy="37" rx="25" ry="5"/><ellipse cx="99" cy="37" rx="25" ry="5"/></g>
-                  <path d="M-42-2q6-17 21-18h42q17 2 21 18l-6 28H-35Z" fill="url(#drone-shell)" stroke="#a7aa9e" stroke-width="2"/>
-                  <path d="M-23-15h46m-51 9h56" stroke="#717b73" stroke-width="2"/>
-                  <circle cx="-29" cy="7" r="5" fill="#afc286" stroke="#242b27" stroke-width="2"/><circle cx="29" cy="7" r="5" fill="#c7a56d" stroke="#242b27" stroke-width="2"/>
-                  <path d="M-8 27v18l-12 18m28-36v18l12 18" fill="none" stroke="#343c37" stroke-width="7" stroke-linecap="round"/>
-                  <path d="M-20 62h40" stroke="#191f1c" stroke-width="8" stroke-linecap="round"/>
-                  <path d="M-13 32v12h26V32" fill="#333a35" stroke="#a4a697" stroke-width="1.5"/>
-                  <rect x="-10" y="42" width="20" height="17" rx="4" fill="#202724" stroke="#858d83" stroke-width="1.3"/><circle cy="50" r="6" fill="#62736d" stroke="#d9d6c9" stroke-width="1.5"/><circle cy="50" r="2.3" fill="#1b2422"/>
-                </g>
-                <path class="drone-scan" d="M435 146 316 238" stroke="#e5b45d" stroke-opacity=".58" stroke-width="1.5" stroke-dasharray="4 5"/>
-                <g class="defect-marker leak-box"><path d="M172 218h-12v12m166-12h12v12m-178 41v12h12m166 0h12v-12" fill="none" stroke="#e99b42" stroke-width="2.5"/><rect x="176" y="194" width="89" height="20" rx="1" fill="#3e3830" stroke="#e99b42" stroke-width="1.5"/><text x="185" y="208" fill="#f5c46b" font-size="10" font-family="Arial,sans-serif" font-weight="700">LEAK</text><circle cx="293" cy="239" r="4" fill="#f5b54d" stroke="#403b32" stroke-width="2"/></g>
-                <g class="defect-marker crack-box"><path d="M448 177h-12v12m147-12h12v12m-159 45v12h12m135 0h12v-12" fill="none" stroke="#f06430" stroke-width="2.5"/><rect x="456" y="153" width="94" height="20" rx="1" fill="#3b3430" stroke="#f06430" stroke-width="1.5"/><text x="466" y="167" fill="#ffc16c" font-size="10" font-family="Arial,sans-serif" font-weight="700">CRACK</text><circle cx="468" cy="191" r="4" fill="#ffc16c" stroke="#423831" stroke-width="2"/></g>
-                <g class="scan-frame"><animateMotion dur="18s" repeatCount="indefinite" path="M111 262C243 247 370 225 566 211"/><rect x="-29" y="-23" width="58" height="46" rx="2" fill="#e5b45d" fill-opacity=".035" stroke="#e6b65e" stroke-width="1.4"/><path d="M0-21v42M-27 0h54" stroke="#f3d28f" stroke-opacity=".7" stroke-width=".8"/></g>
-                <g fill="#343d38" opacity=".75"><path d="M0 332 680 252v108H0Z"/><path d="M0 343 680 266" stroke="#c0a875" stroke-width="2"/></g>
-                <text x="24" y="29" fill="#f1eadb" font-size="9" font-family="Arial,sans-serif" letter-spacing="1.25">PIPELINE INSPECTION · LIVE DETECTION + TRACKING</text>
-              </svg>
+            <div class="uav-visual drone-scene-frame" role="group" aria-label="Animated illustrative pipeline inspection: a 3D drone scans reference refinery footage and outlines representative corrosion, leak, and crack areas">
+              <iframe class="drone-scene-embed" src="drone_vid/dist/index.html" title="Animated drone pipeline inspection scene" loading="lazy" allow="fullscreen" referrerpolicy="no-referrer"></iframe>
+              <p class="drone-scene-note">Illustrative scene · defect footage is representative reference imagery</p>
+              <a class="scene-credit" href="assets/project-scenes/SOURCES.md">Photo sources &amp; licenses ↗</a>
             </div>
             <div class="project-card-body">
               <p class="project-kicker"><span>02</span> FARNESS UAV SOFTWARE · 2025</p>
               <h3 id="uav-title">Infrastructure,<br>in flight</h3>
               <p class="project-question">How do you spot a crack from above?</p>
               <p>Real-time drone detection and tracking for pipeline cracks, leaks, and puddles.</p>
-              <div class="metric-row"><div><strong>98.9%</strong><span>Precision</span></div><div><strong>98.4%</strong><span>Recall</span></div><div><strong>98.6%</strong><span>mAP@50</span></div></div>
-              <div class="project-tags"><span>YOLOv12</span><span>ByteTrack</span><span>SORT</span></div>
+              <div class="metric-row"><div><strong>~91%</strong><span>Precision</span></div><div><strong>~86%</strong><span>Recall</span></div><div><strong>~89%</strong><span>mAP@50</span></div><div><strong>~30</strong><span>FPS</span></div></div>
+              <div class="project-tags"><span>YOLOv12</span><span>SORT</span></div>
+              <a class="case-study-link" href="projects/drone-inspection.html">Read the case study <span aria-hidden="true">↗</span></a>
             </div>
           </article>
 
-          <article class="project project-card reveal" aria-labelledby="candidate-title">
-            <div class="candidate-visual motion-diagram" role="group" tabindex="0" aria-label="Candidate screening workflow with abstract resume and role cards, connecting skill signals, a matching result, and grounded feedback">
+          <article class="project project-card candidate-project-card reveal" aria-labelledby="candidate-title">
+            <div class="candidate-visual motion-diagram" data-project-preview="candidate-screening" role="group" aria-label="Candidate screening video preview; the animated diagram is shown if the video is unavailable">
+              <video class="candidate-demo-video" autoplay muted loop playsinline preload="metadata" aria-label="Silent looping candidate screening project preview" hidden></video>
+              <span class="candidate-video-label">Candidate screening · project preview</span>
               <svg class="scene-svg candidate-scene" viewBox="0 0 680 280" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
                 <defs>
                   <linearGradient id="candidate-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf6"/><stop offset="1" stop-color="#e8dfcf"/></linearGradient>
@@ -270,69 +214,44 @@
               <p class="project-question">Could a better match start with meaning?</p>
               <p>An AI recruitment workflow for resume and job matching, contextual ranking, and recruiter feedback grounded with RAG.</p>
               <div class="project-tags"><span>LLMs</span><span>RAG</span><span>Semantic matching</span></div>
+              <a class="case-study-link" href="projects/candidate-screening.html">Read the case study <span aria-hidden="true">↗</span></a>
             </div>
           </article>
 
           <article class="project project-card project-wide reveal" aria-labelledby="farmwise-title">
-            <div class="farm-visual motion-diagram" role="img" aria-label="Crop rotation sequence across three seasons, showing different crop stages, soil layers, and the next point in the cycle">
-              <svg class="scene-svg farm-scene" viewBox="0 0 680 320" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-                <defs>
-                  <linearGradient id="farm-ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#75865e"/><stop offset="1" stop-color="#4e6147"/></linearGradient>
-                  <linearGradient id="soil-side" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#bb9568"/><stop offset="1" stop-color="#76563f"/></linearGradient>
-                  <filter id="farm-shadow" x="-20%" y="-25%" width="150%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="6"/><feOffset dy="8"/><feComponentTransfer><feFuncA type="linear" slope=".28"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-                  <marker id="rotation-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 8 4 0 8Z" fill="#e5c990"/></marker>
-                </defs>
-                <rect width="680" height="320" fill="#58634b"/><path d="M0 210 680 194v126H0Z" fill="#647454"/>
-                <path d="M0 238 680 222v98H0Z" fill="url(#soil-side)"/><path d="M0 258 680 242M0 282 680 266M0 302 680 286" stroke="#4c3d30" stroke-opacity=".42" stroke-width="2"/>
-                <path d="M24 45H656" stroke="#e7dcc4" stroke-opacity=".22"/>
-                <text x="27" y="31" fill="#f1eadb" font-size="9" font-family="Arial,sans-serif" letter-spacing="1.4">ONE FIELD · A ROTATION THROUGH THREE SEASONS</text>
-                <ellipse cx="338" cy="225" rx="293" ry="25" fill="#272b23" opacity=".23"/>
-                <g class="farm-maquette" filter="url(#farm-shadow)">
-                  <path d="M44 148 340 75 636 148 340 222Z" fill="url(#farm-ground)" stroke="#d0c29f" stroke-width="1.2"/>
-                  <path d="m44 148 296 74v12L44 159Z" fill="#9b7855"/><path d="m340 222 296-74v12l-296 74Z" fill="url(#soil-side)"/>
-                  <g class="season-plot plot-one">
-                    <path d="m62 146 77-37 78 37-78 39Z" fill="#78835f" stroke="#d5c7a7"/>
-                    <g class="crop-row crop-row-one" fill="none" stroke="#e3d4ad" stroke-width="1.5"><path d="m79 143 60 29m-43-37 60 29m-43-37 60 29m-43-37 60 29"/></g>
-                    <g class="plot-low-crop" fill="#bbc091" stroke="#eee0b7" stroke-width="1"><path d="M105 141v-14m0 8-6-5m6 9 6-7m27 19v-13m0 7-6-5m6 9 6-7m28-18v-14m0 8-6-5m6 9 6-7m24 20v-14m0 8-6-5m6 9 6-7"/></g>
-                  </g>
-                  <g class="season-plot plot-two">
-                    <path d="m262 146 78-37 78 37-78 39Z" fill="#687854" stroke="#d5c7a7"/>
-                    <g class="crop-row crop-row-two" fill="none" stroke="#d4ca9f" stroke-width="1.6"><path d="m278 143 62 29m-44-37 62 29m-44-37 62 29m-44-37 62 29"/></g>
-                    <g class="plot-tall-crop" fill="none" stroke="#e0d2a3" stroke-width="1.5" stroke-linecap="round"><path d="M292 139v-28m0 9-6-6m6 11 6-7m31 29v-31m0 11-6-6m6 11 6-7m31 30v-29m0 9-6-6m6 11 6-7m29 17v-28m0 9-6-6m6 11 6-7"/></g>
-                  </g>
-                  <g class="season-plot plot-three">
-                    <path d="m462 146 78-37 78 37-78 39Z" fill="#75805d" stroke="#e2d1a7" stroke-width="1.7"/>
-                    <g class="crop-row crop-row-three" fill="none" stroke="#d9c89c" stroke-width="1.5"><path d="m478 143 62 29m-44-37 62 29m-44-37 62 29m-44-37 62 29"/></g>
-                    <g class="plot-cover-crop" fill="#aeb78a" stroke="#e1d3aa" stroke-width="1"><path d="M494 142q-8-14-15-4 7 8 15 4m0 0q4-15 13-10-2 9-13 10m29-10q-8-14-15-4 7 8 15 4m0 0q4-15 13-10-2 9-13 10m27 18q-8-14-15-4 7 8 15 4m0 0q4-15 13-10-2 9-13 10m29-10q-8-14-15-4 7 8 15 4m0 0q4-15 13-10-2 9-13 10"/></g>
-                    <path class="recommended-outline" d="m462 146 78-37 78 37-78 39Z" fill="none" stroke="#f1dda9" stroke-width="2.2" stroke-dasharray="5 4"/>
-                  </g>
-                  <path class="farm-network rotation-route" d="M212 84C230 72 247 72 264 84H412C430 72 447 72 464 84" fill="none" stroke="#e5c990" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#rotation-arrow)"/>
-                  <circle class="rotation-cursor" r="4" fill="#f1dda9" stroke="#454c3a" stroke-width="1.5"><animateMotion dur="8s" repeatCount="indefinite" path="M212 84C230 72 247 72 264 84H412C430 72 447 72 464 84"/></circle>
-                  <g class="root-network" fill="none" stroke="#d8c5a3" stroke-opacity=".68" stroke-width="1"><path d="M139 184v22m0-10-9 10m9-5 8 9m-8-15-6 7M340 184v34m0-13-10 13m10-8 12 10m-12-25 8 8m200-23v24m0-13-8 10m8-5 10 9"/></g>
-                  <path class="recommended-outline" d="M467 92h140" fill="none" stroke="#f1dda9" stroke-width="1" stroke-dasharray="3 4"/>
-                  <g class="farm-nodes" fill="#e1cf9f" stroke="#535a44" stroke-width="1.5"><circle cx="139" cy="184" r="3.5"/><circle cx="340" cy="184" r="3.5"/><circle cx="540" cy="184" r="3.5"/></g>
-                </g>
-                <text x="103" y="101" fill="#f0e7d6" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">SEASON 01</text><text x="303" y="101" fill="#f0e7d6" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">SEASON 02</text>
-                <g class="recommended-label" transform="translate(482 54)"><rect width="126" height="24" rx="2" fill="#454d3b" stroke="#d5bd88"/><text x="10" y="16" fill="#f4ead6" font-size="8" font-family="Arial,sans-serif" letter-spacing=".8">NEXT IN SEQUENCE</text></g>
-                <text x="503" y="101" fill="#f4ead6" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">SEASON 03</text>
-                <g class="farm-model-note" transform="translate(545 270)"><rect width="103" height="31" rx="2" fill="#454238" stroke="#c5b68f"/><text x="10" y="19" fill="#eee6d5" font-size="8" font-family="Arial,sans-serif" letter-spacing="1">GCN · LSTM</text></g>
-                <text x="27" y="292" fill="#f0e7d6" font-size="8" font-family="Arial,sans-serif" letter-spacing="1.1">SOIL + PREVIOUS CROPS → NEXT CYCLE</text>
+            <div class="farm-visual motion-diagram" role="group" aria-label="Illustrative crop rotation sequence using real farm photographs of corn, soybeans, and wheat">
+              <div class="rotation-heading"><span>FARMWISE · CROP PLANNING</span><small>ILLUSTRATIVE ROTATION</small></div>
+              <div class="rotation-plots">
+                <figure class="rotation-plot crop-plot-one"><img src="assets/project-scenes/crop-corn.jpg" alt="Corn rows in a working farm field" loading="lazy" decoding="async"><figcaption><small>01 · SEASON</small><strong>CORN</strong></figcaption></figure>
+                <span class="rotation-connector connector-one" aria-hidden="true"><span>→</span></span>
+                <figure class="rotation-plot crop-plot-two"><img src="assets/project-scenes/crop-soybean.jpg" alt="Soybean harvest in a real farm field" loading="lazy" decoding="async"><figcaption><small>02 · SEASON</small><strong>SOYBEAN</strong></figcaption></figure>
+                <span class="rotation-connector connector-two" aria-hidden="true"><span>→</span></span>
+                <figure class="rotation-plot crop-plot-three"><img src="assets/project-scenes/crop-wheat.jpg" alt="Wheat crop growing in a field" loading="lazy" decoding="async"><figcaption><small>03 · SEASON</small><strong>WHEAT</strong></figcaption></figure>
+              </div>
+              <svg class="scene-svg farm-scene" viewBox="0 0 680 320" preserveAspectRatio="none" aria-hidden="true">
+                <path class="farm-network rotation-route" d="M112 60H568" fill="none" stroke="#f2dfad" stroke-width="1.5" stroke-dasharray="5 5"/>
+                <circle class="rotation-cursor" r="4" fill="#fff0c6" stroke="#604e35" stroke-width="1"><animateMotion dur="11s" repeatCount="indefinite" path="M112 60H568"/></circle>
+                <path class="recommended-outline" d="M455 78h205v210H455Z" fill="none" stroke="#f0d28e" stroke-width="2" stroke-dasharray="5 5"/>
               </svg>
+              <span class="rotation-note">Soil + previous crops inform the next cycle</span>
+              <a class="scene-credit" href="assets/project-scenes/SOURCES.md">Photo sources &amp; licenses ↗</a>
             </div>
             <div class="project-card-body">
               <p class="project-kicker"><span>04</span> PERSONAL PROJECT</p>
               <h3 id="farmwise-title">FarmWise</h3>
               <p class="project-question">What should grow after this harvest?</p>
-              <p>An agricultural decision-support platform for crop planning in Tunisia. A hybrid GCN-LSTM model combines soil relationships with previous crop sequences to recommend crop rotations through a Django application.</p>
+              <p>An agricultural decision support platform for crop planning in Tunisia. A hybrid GCN-LSTM model combines soil relationships with previous crop sequences to recommend crop rotations through a Django application.</p>
               <div class="project-tags"><span>GCN-LSTM</span><span>Recommendation systems</span><span>Django</span></div>
+              <a class="case-study-link" href="projects/farmwise.html">Read the case study <span aria-hidden="true">↗</span></a>
             </div>
           </article>
+
         </div>
       </section>
 
       <section class="about section-wrap section-space" id="about" aria-labelledby="about-title">
-        <div class="about-side reveal"><p class="eyebrow">A little about me</p><span class="about-mark" aria-hidden="true">M<span>N</span></span><div class="about-credential"><span>Engineering identity</span><strong>Computer Science Engineer</strong><em>Data Science Specialization</em><small>ESPRIT · 2023—2026</small></div></div>
-        <div class="about-copy reveal"><h2 id="about-title">Curiosity,<br>put to work.</h2><p>I'm an AI &amp; Data Science Engineer interested in building practical intelligent systems, from data-driven models to deployed AI applications. I enjoy solving complex problems, experimenting with new approaches, and turning ideas into reliable solutions.</p><a class="text-link" href="cv.pdf" target="_blank" rel="noopener">View my CV <span aria-hidden="true">↗</span></a></div>
+        <div class="about-side reveal"><p class="eyebrow">A little about me</p><span class="about-mark" aria-hidden="true">M<span>N</span></span><div class="about-credential"><span>Professional identity</span><strong>AI &amp; Data Science Engineer</strong><em>Data Science Specialization</em><small>ESPRIT · 2023—2026</small></div></div>
+        <div class="about-copy reveal"><h2 id="about-title">Curiosity,<br>put to work.</h2><p>I'm an AI &amp; Data Science Engineer interested in building practical intelligent systems, from models based on data to deployed AI applications. I enjoy solving complex problems, experimenting with new approaches, and turning ideas into reliable solutions.</p><a class="text-link" href="cv.pdf" target="_blank" rel="noopener">View my CV <span aria-hidden="true">↗</span></a></div>
       </section>
 
       <section class="skills section-wrap section-space" id="skills" aria-labelledby="skills-title">
@@ -346,11 +265,11 @@
       </section>
 
       <section class="experience section-wrap section-space" id="experience" aria-labelledby="experience-title">
-        <div class="section-heading reveal"><div><p class="eyebrow">Selected experience</p><h2 id="experience-title">Where does engineering meet reality?</h2></div><p class="section-aside">Internships spanning AI, data science, and full-stack development.</p></div>
+        <div class="section-heading reveal"><div><p class="eyebrow">Selected experience</p><h2 id="experience-title">Where does engineering meet reality?</h2></div><p class="section-aside">Internships spanning AI, data science, and full stack development.</p></div>
         <div class="timeline">
-          <article class="experience-item reveal"><div class="experience-date">2026</div><div class="experience-main"><p class="experience-company">VERMEG <span>· TUNISIA</span></p><h3>Data Science Intern</h3><p class="experience-project">DocAI · Intelligent field extraction from scanned financial agreements</p><ul><li>Developed an end-to-end document intelligence system using OCR and a five-agent LLM architecture for dynamic field extraction.</li><li>Benchmarked five OCR approaches and selected GLM-OCR (7.32% CER, 0.754 TEDS); used local Ollama inference for data residency requirements.</li><li>Integrated the pipeline into a FastAPI and React application with Keycloak, Docker, and Prometheus/Grafana.</li></ul><div class="experience-tags"><span>OCR</span><span>LLM agents</span><span>FastAPI</span><span>React</span><span>Docker</span></div></div><div class="experience-index">01</div></article>
-          <article class="experience-item reveal"><div class="experience-date">2025</div><div class="experience-main"><p class="experience-company">FARNESS UAV SOFTWARE</p><h3>AI Intern</h3><p class="experience-project">Drone-based object detection &amp; tracking</p><ul><li>Built a real-time computer vision system to detect pipeline cracks, leaks, and puddles using YOLOv12.</li><li>Achieved 98.9% precision, 98.4% recall, and 98.6% mAP@50; implemented ByteTrack and SORT to track anomalies.</li><li>Integrated detection and tracking into a live video pipeline for drone inspections.</li></ul><div class="experience-tags"><span>Computer Vision</span><span>YOLOv12</span><span>ByteTrack</span><span>SORT</span></div></div><div class="experience-index">02</div></article>
-          <article class="experience-item reveal"><div class="experience-date">2024</div><div class="experience-main"><p class="experience-company">ADDINN GROUP</p><h3>Full-Stack Developer Intern</h3><p class="experience-project">Product management web application</p><ul><li>Developed a product management application with Angular, .NET 6, and PostgreSQL, including RESTful CRUD operations.</li><li>Implemented secure user authentication with form validation and password encryption.</li></ul><div class="experience-tags"><span>Angular</span><span>.NET 6</span><span>PostgreSQL</span><span>REST API</span></div></div><div class="experience-index">03</div></article>
+          <article class="experience-item reveal"><div class="experience-date">2026</div><div class="experience-main"><p class="experience-company">VERMEG <span>· TUNISIA</span></p><h3>Data Science Intern</h3><p class="experience-project">DocAI · Intelligent field extraction from scanned financial agreements</p><ul><li>Built a document intelligence system that uses OCR and five LLM agents to extract fields from scanned agreements.</li><li>Benchmarked five OCR approaches and selected GLM-OCR (7.32% CER, 0.754 TEDS); used local Ollama inference for data residency requirements.</li><li>Integrated the pipeline into a FastAPI and React application with Keycloak, Docker, and Prometheus/Grafana.</li></ul><div class="experience-tags"><span>OCR</span><span>LLM agents</span><span>FastAPI</span><span>React</span><span>Docker</span></div></div><div class="experience-index">01</div></article>
+          <article class="experience-item reveal"><div class="experience-date">2025</div><div class="experience-main"><p class="experience-company">FARNESS UAV SOFTWARE</p><h3>AI Intern</h3><p class="experience-project">Drone object detection and tracking</p><ul><li>Built a computer vision system to detect pipeline cracks, leaks, and puddles in drone footage.</li><li>Achieved approximately 91% precision, 86% recall, and 89% mAP@50 at around 30 FPS. SORT tracking maintained object identities and smoothed trajectories.</li><li>Estimated future pipeline paths from drone footage to support trajectory prediction.</li></ul><div class="experience-tags"><span>Computer Vision</span><span>YOLOv12</span><span>SORT</span></div></div><div class="experience-index">02</div></article>
+          <article class="experience-item reveal"><div class="experience-date">2024</div><div class="experience-main"><p class="experience-company">ADDINN GROUP</p><h3>Full stack Developer Intern</h3><p class="experience-project">Web development</p><ul><li>Developed web application features using Angular, .NET 6, and PostgreSQL.</li><li>Implemented CRUD operations, form validation, and secure user authentication.</li></ul><div class="experience-tags"><span>Angular</span><span>.NET 6</span><span>PostgreSQL</span><span>REST API</span></div></div><div class="experience-index">03</div></article>
         </div>
       </section>
 
@@ -376,7 +295,7 @@
 
       <section class="contact section-wrap" id="contact" aria-labelledby="contact-title">
         <div class="contact-top"><p class="eyebrow">Open to opportunities</p><span class="contact-mark" aria-hidden="true">MN<span>.</span></span></div>
-        <div class="contact-main"><h2 id="contact-title">What could we<br>build together?</h2><div class="contact-copy"><p>Interested in AI, Data Science, or Machine Learning opportunities? I'd be glad to connect.</p><a class="button button-light" href="mailto:mariem.nasri773@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a></div></div>
+        <div class="contact-main"><h2 id="contact-title">What could we<br>build together?</h2><div class="contact-copy"><p>Interested in AI, Data Science, or Machine Learning opportunities? I'd be glad to connect.</p><details class="contact-choice"><summary class="button button-light">Start a conversation <span aria-hidden="true">↗</span></summary><div class="contact-choice-menu"><a href="https://wa.me/21627582395" target="_blank" rel="noopener noreferrer">Message me on WhatsApp <span aria-hidden="true">↗</span></a><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=mariem.nasri773%40gmail.com" target="_blank" rel="noopener noreferrer">Send me an email <span aria-hidden="true">↗</span></a></div></details></div></div>
         <div class="contact-links"><a href="mailto:mariem.nasri773@gmail.com"><span>Email</span>mariem.nasri773@gmail.com <b aria-hidden="true">↗</b></a><a href="https://linkedin.com/in/mariem-nasri-623789298" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span>Connect professionally <b aria-hidden="true">↗</b></a><a href="https://github.com/Mariem-Nasri" target="_blank" rel="noopener noreferrer"><span>GitHub</span>Explore my code <b aria-hidden="true">↗</b></a></div>
       </section>
     </main>
